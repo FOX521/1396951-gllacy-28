@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Вадим Усенко](https://up.htmlacademy.ru/htmlcss/28/user/1396951).
-* Наставник: `Неизвестно`.
+* Наставник: [Иван Жарков](https://htmlacademy.ru/profile/stalyer).
 
 ---
 
