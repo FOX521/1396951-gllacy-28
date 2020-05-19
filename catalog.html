@@ -25,6 +25,12 @@
   		<a href="#">Поиск</a>
    		<a href="#">Вход</a>
    		<a href="#">Корзина</a>
+      <section>
+        <p>
+          с 10 до 20, ежедневно
+        </p>
+          <a href="tel:88124502525">8 812 450-25-25</a>
+      </section>
     </header>
     <main>
       <ul>
@@ -41,6 +47,46 @@
       <h1>Сливочное мороженное</h1>
       <section>
         <!--Form for filter-->
+        <form action="https://echo.htmlacademy.ru/courses" method="post"
+        oninput="pricechoice.value=priceoutput.value">
+          <label>
+            <p>Сортировка:</p>
+            <select type="" name="">
+              <option value="по популярности">по популярности</option>
+              <option value="сначала недорогие">сначала недорогие</option>
+              <option value="сначала дорогие">сначала дорогие</option>
+              <option value="по жирности">по жирности</option>
+            </select>
+          </label>
+         
+          <label for="pricechoice">Цена:</label>
+          <input type="range" min="100" max="500" step="1" id="pricechoice"
+            name="pricechoice">
+          <output name="priceoutput"></output>
+
+          <p>Жирность:</p>
+          <input type="radio" name="zero" id="zero_prec" value="0">
+          <label for="zero_prec">0%</label>
+          <input type="radio" name="ten" id="ten_prec" value="10" checked>
+          <label for="ten_prec">10%</label>
+          <input type="radio" name="thirty" id="thirty_prec" value="30">
+          <label for="thirty_prec">30%</label>
+          <input type="radio" name="more_thirty" id="more_thirty_prec" value="31">
+          <label for="more_thirty_prec">Выше 30%</label>
+          <br>
+          <p>Наполнители:</p>
+          <input  type="checkbox" name="choclate" id="choclate">
+          <label for="choclate">Шоколадные</label>
+          <input type="checkbox" name="sugar_sand" id="sugar_sand">
+          <label for="sugar_sand">Сахарные присыпки</label>
+          <input type="checkbox" name="fruits" id="fruits">
+          <label for="fruits">Фрукты</label>
+          <input type="checkbox" name="siroup" id="siroup">
+          <label fro="siroup">Сиропы</label>
+          <input  type="checkbox" name="jam" id="jam">
+          <label for="jam">Джемы</label>
+          <input type="submit" value="Применить">
+        </form>
       </section>
       <section>
       <ul>
@@ -54,7 +100,7 @@
           <p>
             310 ₽/кг           
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -66,7 +112,7 @@
           <p>
             380 ₽/кг
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -90,7 +136,7 @@
           <p>
             415 ₽/кг
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -102,7 +148,7 @@
           <p>
             325 ₽/кг
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -114,7 +160,7 @@
            <p>
              410 ₽/кг
            </p>
-           <button type='button'>Быстрый просмотр</button>
+           <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -126,7 +172,7 @@
           <p>
             315 ₽/кг
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -138,7 +184,7 @@
           <p>
             320 ₽/кг
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -150,7 +196,7 @@
           <p>
             440 ₽/кг
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -162,7 +208,7 @@
           <p>
             435 ₽/кг
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -174,7 +220,7 @@
           <p>
             355 ₽/кг
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
         <li>
           <a href="#">
@@ -186,7 +232,7 @@
           <p>
             420 ₽/кг
           </p>
-          <button type='button'>Быстрый просмотр</button>
+          <button type="button">Быстрый просмотр</button>
         </li>
       </ul>
       <ul>
@@ -245,7 +291,7 @@
         </a>
       </p>
       <p>
-        Сделано в <a href="https://htmlacademy.ru">HTML Academy © 2019</a>
+        Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019
       </p>
     </footer>  
   </body>
