@@ -52,32 +52,32 @@
           <label>
             <p>Сортировка:</p>
             <select type="" name="">
-              <option value="по популярности">по популярности</option>
-              <option value="сначала недорогие">сначала недорогие</option>
-              <option value="сначала дорогие">сначала дорогие</option>
-              <option value="по жирности">по жирности</option>
+              <option value="most_popular">по популярности</option>
+              <option value="cheap">сначала недорогие</option>
+              <option value="expensive">сначала дорогие</option>
+              <option value="in_fat">по жирности</option>
             </select>
           </label>
          
           <label for="pricechoice">Цена:</label>
-          <input type="range" min="100" max="500" step="1" id="pricechoice"
-            name="pricechoice">
+          100<input type="range" min="100" max="500" step="100" id="pricechoice"
+            name="pricechoice">500
           <output name="priceoutput"></output>
 
           <p>Жирность:</p>
-          <input type="radio" name="zero" id="zero_prec" value="0">
+          <input type="radio" name="fat_prec" id="zero_prec" value="0">
           <label for="zero_prec">0%</label>
-          <input type="radio" name="ten" id="ten_prec" value="10" checked>
+          <input type="radio" name="fat_prec" id="ten_prec" value="10" checked>
           <label for="ten_prec">10%</label>
-          <input type="radio" name="thirty" id="thirty_prec" value="30">
+          <input type="radio" name="fat_prec" id="thirty_prec" value="30">
           <label for="thirty_prec">30%</label>
-          <input type="radio" name="more_thirty" id="more_thirty_prec" value="31">
+          <input type="radio" name="fat_prec" id="more_thirty_prec" value="31">
           <label for="more_thirty_prec">Выше 30%</label>
           <br>
           <p>Наполнители:</p>
-          <input  type="checkbox" name="choclate" id="choclate">
+          <input  type="checkbox" name="choclate" id="choclate" checked>
           <label for="choclate">Шоколадные</label>
-          <input type="checkbox" name="sugar_sand" id="sugar_sand">
+          <input type="checkbox" name="sugar_sand" id="sugar_sand" checked>
           <label for="sugar_sand">Сахарные присыпки</label>
           <input type="checkbox" name="fruits" id="fruits">
           <label for="fruits">Фрукты</label>
