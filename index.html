@@ -8,20 +8,46 @@
   	<header>
   		<nav>
   			<a>
-  				<img src="\img\logo.svg">
+  				<img src="img\logo.svg" alt="Логотип Glacy Shop">
   			</a>
   			<ul>
   				<li>
-  					<a href="catalog.html">Каталог</a>
-  				</li>
+  					<a href="catalog.html">Каталог</a>  
+         		   <ul>
+         		     <li>Новинки</li>
+         		     <li>Сливочное</li>
+         		     <li>Щербеты</li>
+         		     <li>Фруктовый лед</li>
+         		     <li>Мелорин</li>
+         		   </ul>          
+         		 </li>
   				<li>
   					<a href="#">Доставка и оплата</a>
   				</li>
   				<li>
-  					<a href="#">О компании</a></li>
-  			</ul>	
-  		<a href="#">Поиск</a>
-   		<a href="#">Вход</a>
+  					<a href="#">О компании</a>
+  				</li>
+  			</ul>
+  			<label for="search">  
+          <a href="#">Поиск</a>
+          <input type="search" id="search" name="search" placeholder="Поиск">
+      </label>
+      <br>
+      <a href="#">Вход</a>
+      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      	<label for="login-e-mail">
+        	<input type="e-mail" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">  		
+      	</label>
+      <br>
+      	<label for="login-password">
+        	<input type="password" id="login-password" name="login-password">
+      	</label>
+      <br>
+      	<button type="submit">Войти</button>
+      <br>
+      <a href="#">Забыли пароль?</a>
+      <a href="#">Новая регистрация</a>
+      </form>
    		<a href="#">Корзина</a>
    		<section>
    			<p>
@@ -34,7 +60,7 @@
    	<main>
    		<section>
    			<figure>
-   				<img src="\img\Group 1.jpg" width="200" height="175" alt="Picture">
+   				<img src="img\group1.jpg" width="200" height="175" alt="Picture">
    				<button type="button" disabled>Назад</button>
    				<button type="button">Вперед</button>
    				<a href="#">Давайте оба!</a>
@@ -65,7 +91,7 @@
    						</h3>
    					</a>
    					<a href="#">
-   						<img src="\img\xit1.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+   						<img src="img\xit1.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
    					</a>
    					<p>
    						310 ₽/кг
@@ -79,7 +105,7 @@
    						</h3>
    					</a>
    					<a href="#">
-   						<img src="\img\xit2.jpg" width="150" height="150" alt="Сливочно-кофейное с кусочками шоколада">
+   						<img src="img\xit2.jpg" width="150" height="150" alt="Сливочно-кофейное с кусочками шоколада">
    					</a>
    					<p>
    						380 ₽/кг
@@ -93,7 +119,7 @@
    						</h3>
    					</a>
    					<a href="#">
-   						<img src="\img\xit3.jpg"  width="150" height="150" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+   						<img src="img\xit3.jpg"  width="150" height="150" alt="Сливочно-клубничное с присыпкой из белого шоколада">
    					</a>
    					<p>
    						355 ₽/кг
@@ -107,7 +133,7 @@
    						</h3>
    					</a>
    					<a href="#">
-   						<img src="\img\xit4.jpg"  width="150" height="150" alt="Сливочное крем-брюле с карамельной подливкой">
+   						<img src="img\xit4.jpg"  width="150" height="150" alt="Сливочное крем-брюле с карамельной подливкой">
    					</a>
    					<p>
    						415 ₽/кг
@@ -156,7 +182,7 @@
    	        </a>  	    	
    	    </article>
   <section>
-   	<form action="#" method="post">
+   	<form action="https://echo.htmlacademy.ru/courses" method="post">
    			<p>
    	    		Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>
    	    		 всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
@@ -207,12 +233,30 @@
    		</section>
    		<p>
    			<a href="https://htmlacademy.ru">
-   				<img src="\img\logo_aka.svg">
+   				<img src="img\logo_aka.svg">
    			</a>
    		</p>
    		<p>
    			Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019
    		</p>
    	</footer>  
+   	<section>
+   		<form action="https://echo.htmlacademy.ru/courses" method="post">
+   			<h2>Мы обязательно вам ответим!</h2>
+   			<label for="cust_name">
+   				<input type="text" id="cust_name" name="cust_name" placeholder="Имя Фамилия">
+   			</label>
+   			<br>
+   			<label for="feedback">
+   				<input type="e-mail" id="feedback" name="feedback" placeholder="e-mail@example.ru">
+   			</label>
+   			<br>
+   			<label for="question">
+   				<textarea id="question" name="question" rows="5" cols="30" placeholder="В свободной форме"></textarea>
+   			</label>
+   			<button type="submit">Отправить</button>
+   		</form>
+   		<button type="button">Закрыть</button>
+   	</section>
   </body>
 </html>
