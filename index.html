@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
   </head>
-  <body>
+  <body bgcolor ="black">
     <header>
       <nav>
         <a>
@@ -35,7 +35,7 @@
       <a href="#">Вход</a>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
         <label for="login-e-mail">
-        <input type="e-mail" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">  		
+        <input type="email" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">  		
         </label>
         <br>
         <label for="login-password">
@@ -88,7 +88,7 @@
               </h3>
             </a>
             <a href="#">
-            <img src="img\xit1.jpg" width="150" height="150" alt="Сливочное с апельсиновым джемом и цитрусовой стружкой">
+            <img src="img\photo1.jpg" width="150" height="150" alt="Апельсиновое морожженое с джемом" >
             </a>
             <p>
               310 ₽/кг
@@ -102,7 +102,7 @@
               </h3>
             </a>
             <a href="#">
-            <img src="img\xit2.jpg" width="150" height="150" alt="Сливочно-кофейное с кусочками шоколада">
+            <img src="img\photo2.jpg" width="150" height="150" alt="Мороженное сливочное с  кусочками шоколада" >
             </a>
             <p>
               380 ₽/кг
@@ -116,7 +116,7 @@
               </h3>
             </a>
             <a href="#">
-            <img src="img\xit3.jpg"  width="150" height="150" alt="Сливочно-клубничное с присыпкой из белого шоколада">
+            <img src="img\photo3.jpg"  width="150" height="150" alt="Присыпка из белого шоколада и сливочное мороженное с клубникой">
             </a>
             <p>
               355 ₽/кг
@@ -130,7 +130,7 @@
               </h3>
             </a>
             <a href="#">
-            <img src="img\xit4.jpg"  width="150" height="150" alt="Сливочное крем-брюле с карамельной подливкой">
+            <img src="img\photo4.jpg"  width="150" height="150" alt="Карамельная подливка и крем брюле">
             </a>
             <p>
               415 ₽/кг
@@ -230,7 +230,7 @@
       </section>
       <p>
         <a href="https://htmlacademy.ru">
-        <img src="img\logo_aka.svg" alt="Логотип компании">
+        <img src="img\logo-htmlacademy.svg" width="100" height="100" alt="Логотип компании">
         </a>
       </p>
       <p>
@@ -239,17 +239,19 @@
     </footer>
     <section>
       <form action="https://echo.htmlacademy.ru/courses" method="post">
+      	<fieldset>
         <h2>Мы обязательно вам ответим!</h2>
         <label for="cust_name">Обратная связь
         <input type="text" id="cust_name" name="cust_name" placeholder="Имя Фамилия">
         </label>
-        <label for="feedback">
+        <label for="feedback">Почта
         <input type="e-mail" id="feedback" name="feedback" placeholder="e-mail@example.ru">
         </label>
-        <label for="question">
+        <label for="question">Вопрос
         <textarea id="question" name="question" rows="5" cols="30" placeholder="В свободной форме"></textarea>
-        </label>
-        <button type="submit">Отправить</button>
+        </label>        
+    </fieldset>
+    <button type="submit">Отправить</button>
       </form>
       <button type="button">Закрыть</button>
     </section>
