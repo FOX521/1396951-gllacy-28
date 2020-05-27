@@ -8,7 +8,7 @@
     <header>
       <nav>
         <a>
-        <img src="img\logo.svg" alt="Логотип Glacy Shop">
+        <img src="img/logo.svg" alt="Логотип Glacy Shop">
         </a>
         <ul>
           <li>
@@ -29,20 +29,19 @@
       </nav>
       <a href="#">Поиск</a>
       <div>
-        <input type="search" id="search" name="search" placeholder="Поиск">
+      	<label for="search" hidden="hidden"></label>
+          <input type="search" id="search" name="search" placeholder="Поиск">  	
       </div>
       <a href="#">Вход</a>
       <div>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <p>
-            <label for="login-e-mail">Логин
-            <input type="email" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">	
-            </label>
+            <label for="login-e-mail" hidden="hidden">Логин</label>
+            <input type="email" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">      
           </p>
           <p>
-            <label for="login-password">Пароль
-            <input type="password" id="login-password" name="login-password">
-            </label>
+            <label for="login-password" hidden="hidden">Пароль</label>
+            <input type="password" id="login-password" name="login-password" placeholder="Пароль">
           </p>
           <button type="submit">Войти</button>
           <p>
@@ -54,30 +53,6 @@
         </form>
       </div>
       <a href="#">Корзина</a>
-      <div>
-        <table>
-          <!--Не совсем опять же понял как разметить таблицу. Она же должна быть динамичной при добавлении товара. Появляться данные должны и так же удаляться из нее.-->
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-            <td></td>
-          </tr>
-          <tr>
-            <td colspan="5"></td>
-            <!--Это строка  "итого"-->
-          </tr>
-        </table>
-        <a href="#">Оформить заказ</a>
-      </div>
       <section>
         <p>
           с 10 до 20, ежедневно
@@ -88,14 +63,22 @@
     <main>
       <h1>Интернет магазин мороженного </h1>
       <section>
-        <figure>
-          <img src="img/image-slader1.webp" width="647" height="584">
-          <img src="img/image-slader2.webp" width="639" height="582">
-          <img src="img/image-slader3.webp" width="644" height="582">
-        </figure>
-        <button type="button" disabled>Назад</button>
-        <button type="button">Вперед</button>
-        <a href="#">Давайте оба!</a>
+      	<ul>
+      		<li>
+      			<a href="#">Крем-брюле и пломбир с малиновым джемом</a>
+      		</li>
+      		<li>
+      			<a href="#">Шоколадный пломбир и лимонный сорбет</a>
+      		</li>
+      		<li>
+      			<a href="#">Пломбир с помадкой и клубничный щербет</a>
+      		</li>
+      	</ul>
+      	<div>
+      		<button type="button">Первый слайд</button>
+      		<button type="button">Второй слайд</button>
+      		<button type="button">Третий слайд</button>
+      	</div>
       </section>
       <section>
         <article>
@@ -122,7 +105,7 @@
               </h3>
             </a>
             <a href="#">
-            <img src="img\photo1.jpg" width="150" height="150" alt="Апельсиновое морожженое с джемом" >
+            <img src="img/photo1.jpg" width="150" height="150" alt="Апельсиновое морожженое с джемом" >
             </a>
             <p>
               310 ₽/кг
@@ -136,7 +119,7 @@
               </h3>
             </a>
             <a href="#">
-            <img src="img\photo2.jpg" width="150" height="150" alt="Мороженное сливочное с  кусочками шоколада" >
+            <img src="img/photo2.jpg" width="150" height="150" alt="Мороженное сливочное с  кусочками шоколада" >
             </a>
             <p>
               380 ₽/кг
@@ -150,7 +133,7 @@
               </h3>
             </a>
             <a href="#">
-            <img src="img\photo3.jpg"  width="150" height="150" alt="Присыпка из белого шоколада и сливочное мороженное с клубникой">
+            <img src="img/photo3.jpg"  width="150" height="150" alt="Присыпка из белого шоколада и сливочное мороженное с клубникой">
             </a>
             <p>
               355 ₽/кг
@@ -164,7 +147,7 @@
               </h3>
             </a>
             <a href="#">
-            <img src="img\photo4.jpg"  width="150" height="150" alt="Карамельная подливка и крем брюле">
+            <img src="img/photo4.jpg"  width="150" height="150" alt="Карамельная подливка и крем брюле">
             </a>
             <p>
               415 ₽/кг
@@ -213,7 +196,7 @@
         </a>
       </article>
       <section>
-        <form action="https://echo.htmlacademy.ru/courses" method="post">
+        <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>
             всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
@@ -229,7 +212,17 @@
       </section>
       <section>
         <div>
-          <img src="img\map.jpg" alt="ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+          <img src="img/map.jpg" alt="ул. Большая Конюшенная, 19/8, Санкт-Петербург">
+          <section>
+          	<p>Адрес главного офиса<br>
+          	 и офлайн-магазина:<br>
+          	 ул. Большая Конюшенная,<br>
+          	 19/8, Санкт-Петербург<br>
+          	 Для заказов по телефону:<br>
+          	 8 812 450-25-25<br>
+             (с 10 до 20 ежедневно)</p>
+          	 <button type="button">Форма обратной связи</button>
+          </section>
         </div>
       </section>
     </main>
@@ -265,26 +258,24 @@
         </ul>
       </section>
       <p>
-        <a href="https://htmlacademy.ru">
-        <img src="img\logo-htmlacademy.svg" width="100" height="100" alt="Логотип компании">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="Логотип компании">
         </a>
       </p>
       <p>
-        Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019
+        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </footer>
     <section>
-      <form action="https://echo.htmlacademy.ru/courses" method="post">
+      <form action="https://echo.htmlacademy.ru" method="post">
         <h2>Мы обязательно вам ответим!</h2>
         <p>        	
-          <label for="cust_name">Имя Фамилия
-          <input type="text" id="cust_name" name="cust_name" placeholder="Имя Фамилия">
-          </label>
+          <label for="cust_name" hidden="hidden">Имя Фамилия</label>
+          <input type="text" id="cust_name" name="cust_name" placeholder="Имя Фамилия">          
         </p>
         <p>
-          <label for="feedback">Почта
+          <label for="feedback" hidden="hidden">Почта</label>
           <input type="e-mail" id="feedback" name="feedback" placeholder="e-mail@example.ru">
-          </label>
         </p>
         <p>
           <label for="question">

@@ -8,7 +8,7 @@
     <header>
       <nav>
         <a href="index.html">
-        <img src="img\logo.svg" alt="Логотип Glacy Shop"> 
+        <img src="img/logo.svg" alt="Логотип Glacy Shop"> 
         </a>
         <ul>
           <li>
@@ -27,22 +27,21 @@
           </li>
         </ul>
       </nav>
-      <a href="#" >Поиск</a><!--Не совсем понял как можно реализовать, поэтому не стал поле ввода оборачивать в лэйбл и связывать по айди. Оставил просто ссылку и просто див с полем.-->
+      <a href="#" >Поиск</a>
       <div>
-        <input type="search" id="search" name="search" placeholder="Поиск">   
+        <label for="search" hidden="hidden"></label>
+          <input type="search" id="search" name="search" placeholder="Поиск">
       </div>
       <a href="#">Вход</a>
       <div>
-        <form action="https://echo.htmlacademy.ru/courses">
+        <form action="https://echo.htmlacademy.ru">
           <p>
-            <label for="login-e-mail">Логин
+            <label for="login-e-mail" hidden="hidden">Логин</label>
             <input type="email" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">      
-            </label>
           </p>
           <p>
-            <label for="login-password">Пароль
-            <input type="password" id="login-password" name="login-password">
-            </label>
+            <label for="login-password" hidden="hidden">Пароль</label>
+            <input type="password" id="login-password" name="login-password" placeholder="Пароль">
           </p>
           <button type="submit">Войти</button>
           <p>
@@ -98,7 +97,7 @@
       <h1>Сливочное мороженное</h1>
       <section>
         <!--Form for filter-->
-        <form action="https://echo.htmlacademy.ru/courses" method="get">
+        <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
             <ul>
@@ -121,7 +120,6 @@
                 <label for="pricechoice">Цена:</label>
                 100<input type="range" min="100" max="500" step="100" id="pricechoice"
                   name="pricechoice">500
-                <output name="priceoutput"></output>
               </li>
             </ul>
           </fieldset>
@@ -171,7 +169,7 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" value="Применить"></button>
+          <button type="submit" >Применить</button>
         </form>
       </section>
       <section>
@@ -181,7 +179,7 @@
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
             </a>
             <a href="#">            
-            <img src="img\photo1.jpg" width="150" height="150" alt="Апельсиновое морожженое с джемом" >
+            <img src="img/photo1.jpg" width="150" height="150" alt="Апельсиновое морожженое с джемом" >
             </a>
             <p>
               310 ₽/кг           
@@ -193,7 +191,7 @@
               <h3>Сливочно-кофейное с кусочками шоколада</h3>
             </a>
             <a href="#">
-            <img src="img\photo2.jpg" width="150" height="150" alt="Мороженное сливочное с  кусочками шоколада" >
+            <img src="img/photo2.jpg" width="150" height="150" alt="Мороженное сливочное с  кусочками шоколада" >
             </a>
             <p>
               380 ₽/кг
@@ -205,7 +203,7 @@
               <h3>Сливочно-клубничное с присыпкой из белого шоколада</h3>
             </a>
             <a href="#">
-            <img src="img\photo3.jpg"  width="150" height="150" alt="Присыпка из белого шоколада и сливочное мороженное с клубникой">
+            <img src="img/photo3.jpg"  width="150" height="150" alt="Присыпка из белого шоколада и сливочное мороженное с клубникой">
             </a>
             <p>
               355 ₽/кг
@@ -217,7 +215,7 @@
               <h3>Сливочное крем-брюле с карамельной подливкой</h3>
             </a>
             <a href="#">
-            <img src="img\photo4.jpg"  width="150" height="150" alt="Карамельная подливка и крем брюле">
+            <img src="img/photo4.jpg"  width="150" height="150" alt="Карамельная подливка и крем брюле">
             </a>
             <p>
               415 ₽/кг
@@ -229,7 +227,7 @@
               <h3>Сливочное с брусничным джемом</h3>
             </a>
             <a href="#">
-            <img src="img\photo5.jpg"  width="150" height="150" alt="Сливочное с брусничным джемом">
+            <img src="img/photo5.jpg"  width="150" height="150" alt="Сливочное с брусничным джемом">
             </a>
             <p>
               325 ₽/кг
@@ -241,7 +239,7 @@
               <h3>Сливочно-черничное с цельными ягодами черники</h3>
             </a>
             <a href="#">
-            <img src="img\photo6.jpg"  width="150" height="150" alt="Ягоды черники с мороженным">
+            <img src="img/photo6.jpg"  width="150" height="150" alt="Ягоды черники с мороженным">
             </a>
             <p>
               410 ₽/кг
@@ -253,7 +251,7 @@
               <h3>Сливочно-лимонное с карамельной присыпкой</h3>
             </a>
             <a href="#">
-            <img src="img\photo7.jpg"  width="150" height="150" alt="Карамельная присипка с лимонным мороженным">
+            <img src="img/photo7.jpg"  width="150" height="150" alt="Карамельная присипка с лимонным мороженным">
             </a>
             <p>
               315 ₽/кг
@@ -265,7 +263,7 @@
               <h3>Сливочное с шоколадной стружкой</h3>
             </a>
             <a href="#">
-            <img src="img\photo8.jpg"  width="150" height="150" alt="Шоколадная стружка и сливочное мороженное">
+            <img src="img/photo8.jpg"  width="150" height="150" alt="Шоколадная стружка и сливочное мороженное">
             </a>
             <p>
               320 ₽/кг
@@ -277,7 +275,7 @@
               <h3>Сливочно-ванильное с кусочками шоколада</h3>
             </a>
             <a href="#">
-            <img src="img\photo9.jpg"  width="150" height="150" alt="Кусочки шоколада с ванильным мороженным">
+            <img src="img/photo9.jpg"  width="150" height="150" alt="Кусочки шоколада с ванильным мороженным">
             </a>
             <p>
               440 ₽/кг
@@ -289,7 +287,7 @@
               <h3>Сливочноe с ментоловым сиропом</h3>
             </a>
             <a href="#">
-            <img src="img\photo10.jpg"  width="150" height="150" alt="Мороженное сливочное с ментоловым сиропом">
+            <img src="img/photo10.jpg"  width="150" height="150" alt="Мороженное сливочное с ментоловым сиропом">
             </a>
             <p>
               435 ₽/кг
@@ -301,7 +299,7 @@
               <h3>Сливочное с кусочками черного шоколада</h3>
             </a>
             <a href="#">
-            <img src="img\photo11.jpg"  width="150" height="150" alt="Кусочки черного шоколада и сливочное мороженное">
+            <img src="img/photo11.jpg"  width="150" height="150" alt="Кусочки черного шоколада и сливочное мороженное">
             </a>
             <p>
               355 ₽/кг
@@ -313,7 +311,7 @@
               <h3>Сливочное с мятным сиропом</h3>
             </a>
             <a href="#">
-            <img src="img\photo12.jpg"  width="150" height="150" alt="Мятный сироп с сливочным мороженным">
+            <img src="img/photo12.jpg"  width="150" height="150" alt="Мятный сироп с сливочным мороженным">
             </a>
             <p>
               420 ₽/кг
@@ -372,12 +370,12 @@
         </ul>
       </section>
       <p>
-        <a href="https://htmlacademy.ru">
-        <img src="img\logo-htmlacademy.svg" width="100" height="100" alt="Логотип академии">
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+        <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="Логотип академии">
         </a>
       </p>
       <p>
-        Сделано в <a href="https://htmlacademy.ru">HTML Academy</a> © 2019
+        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </footer>
   </body>
