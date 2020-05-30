@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Глейси</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
   </head>
   <body>
     <header>
@@ -12,12 +14,24 @@
         </a>
         <ul>
           <li>
-            <a href="catalog.html">Каталог</a>           		   
-            <a href="">Новинки</a>
-            <a href="">Сливочное</a>
-            <a href="">Щербеты</a>
-            <a href="">Фруктовый лед</a>
-            <a href="">Мелорин</a>
+            <a href="catalog.html">Каталог</a> 
+            <ul>
+              <li>
+              	<a href="">Новинки</a>
+              </li>  
+              <li>
+              	<a href="">Сливочное</a>
+              </li> 
+              <li>
+              	<a href="">Щербеты</a>
+              </li>      
+              <li>
+              	<a href="">Фруктовый лед</a>
+              </li> 
+              <li>
+              	<a href="">Мелорин</a>
+              </li>	
+            </ul>         
           </li>
           <li>
             <a href="#">Доставка и оплата</a>
@@ -29,18 +43,18 @@
       </nav>
       <a href="#">Поиск</a>
       <div>
-      	<label class="visually-hidden" for="search" hidden="hidden">Поиск</label>
+      	<label  for="search" class="visually-hidden">Поиск</label>
           <input type="search" id="search" name="search" placeholder="Поиск">  	
       </div>
       <a href="#">Вход</a>
       <div>
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
-            <label for="login-e-mail" hidden="hidden">Логин</label>
+            <label for="login-e-mail" class="visually-hidden">Логин</label>
             <input type="email" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">      
           </p>
           <p>
-            <label for="login-password" hidden="hidden">Пароль</label>
+            <label for="login-password" class="visually-hidden">Пароль</label>
             <input type="password" id="login-password" name="login-password" placeholder="Пароль">
           </p>
           <button type="submit">Войти</button>
@@ -65,13 +79,19 @@
       <section>
       	<ul>
       		<li>
-      			<a href="#">Крем-брюле и пломбир с малиновым джемом</a>
+      			<a href="#">
+      			  <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+      			</a>
       		</li>
       		<li>
-      			<a href="#">Шоколадный пломбир и лимонный сорбет</a>
+      			<a href="#">
+      			  <h2>Шоколадный пломбир и лимонный сорбет</h2>
+      			  </a>
       		</li>
       		<li>
-      			<a href="#">Пломбир с помадкой и клубничный щербет</a>
+      			<a href="#">
+      			  <h2>Пломбир с помадкой и клубничный щербет</h2>
+      			  </a>
       		</li>
       	</ul>
       	<div>
@@ -203,25 +223,26 @@
             и не слать всякой ненужной ерунды. Честно =)
           </p>
           <p>
-            <label for="e-mail">
-            <input type="email" name="e-mail" id="e-mail"> 
-            </label>
+            <label for="e-mail" class="visually-hidden">Почта</label>
+            <input type="email" name="e-mail" id="e-mail">             
           </p>
-          <button type="button" >Отправить</button>
+          <button type="button">Отправить</button>
         </form>
       </section>
       <section>
         <div>
           <img src="img/map.jpg" alt="ул. Большая Конюшенная, 19/8, Санкт-Петербург">
           <section>
+          	<address>
           	<p>Адрес главного офиса<br>
-          	 и офлайн-магазина:<br>
-          	 ул. Большая Конюшенная,<br>
-          	 19/8, Санкт-Петербург<br>
-          	 Для заказов по телефону:<br>
-          	 8 812 450-25-25<br>
-             (с 10 до 20 ежедневно)</p>
+          	 и офлайн-магазина:</p>
+          	 <h3>ул. Большая Конюшенная,<br>
+          	 19/8, Санкт-Петербург</h3>
+          	 <p>Для заказов по телефону:</p>
+          	 <a href="tel:88124502525">8 812 450-25-25</a>
+             <p>(с 10 до 20 ежедневно)</p>
           	 <button type="button">Форма обратной связи</button>
+          	</address>
           </section>
         </div>
       </section>
@@ -270,17 +291,16 @@
       <form action="https://echo.htmlacademy.ru" method="post">
         <h2>Мы обязательно вам ответим!</h2>
         <p>        	
-          <label for="cust_name" hidden="hidden">Имя Фамилия</label>
-          <input type="text" id="cust_name" name="cust_name" placeholder="Имя Фамилия">          
+          <label for="cust-name" class="visually-hidden">Имя Фамилия</label>
+          <input type="text" id="cust-name" name="cust-name" placeholder="Имя Фамилия">          
         </p>
         <p>
-          <label for="feedback" hidden="hidden">Почта</label>
+          <label for="feedback" class="visually-hidden">Почта</label>
           <input type="e-mail" id="feedback" name="feedback" placeholder="e-mail@example.ru">
         </p>
         <p>
-          <label for="question">
-          <textarea id="question" name="question" rows="5" cols="30" placeholder="В свободной форме"></textarea>
-          </label>  
+          <label for="question">Вопрос</label>  
+          <textarea id="question" name="question" rows="5" cols="30" placeholder="В свободной форме"></textarea>          
         </p>
         <button type="submit">Отправить</button>  
       </form>
