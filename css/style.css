@@ -1,0 +1,254 @@
+/*Variables*/
+:root{
+	--basic-green: #849D8F;
+	--basic-grey:#8996A6;
+	--basic-pink:#9D8B84;
+	--basic-black: #323232;
+	--basic-white:#ffffff;
+	--basic-link:#D07058;
+	--basic-dyrty-green:#5A5A5A;
+	--basic-milk:#F8F7F4;;
+
+}
+
+/*Global*/
+body {
+	min-width: 1200px;	
+	margin: 0;
+	padding: 0;
+	font-family: "Roboto";
+	font-size:16px; 
+	line-height:22px;
+	font-weight: normal;
+	color: var(--basic-white);
+	background-color: var(--basic-green);
+	background-image: url();
+	background-position: top center;
+	background-repeat: no-repeat;
+}
+img{
+	max-width: 100%;
+	height: auto;}
+
+a{text-decoration: none;}
+
+.visually-hidden{
+	display: none ;
+}
+
+
+.main-navigation {
+	line-height: 18px;
+	font-size: 16px;
+	color: var(--basic-white);
+	background-color: transparent;
+}
+
+.site-navigation li {
+	list-style: none;
+	text-decoration: underline;
+	
+}
+
+.site-catalog {
+	list-style: none;
+	text-decoration: underline;
+}
+
+.site-navigation a,
+.user-navigation a {
+	color: var(--basic-white);
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus,
+.user-navigation a:hover,
+.user-navigation a:focus {
+	background-color: var(--basic-link);
+}
+
+
+.stock-rassbery {
+	width: 560px;
+	height: 229px;
+	background: url('../img/background-rassbery.jpg');
+	border-radius:16px;
+}
+
+.stock-rassbery h2{
+	color: var(--basic-white);
+	font-size:35px;
+	line-height: 41px;
+	font-weight: bold;
+	padding-top:16px;
+	padding-left: 16px;
+}
+
+.stock-rassbery p{
+	color: var(--basic-white);
+	font-size:18px;
+	font-weight: bold;
+	line-height:22px;
+	padding-left: 16px;
+}
+
+.stock-choclate {
+	width: 560px;
+	height: 229px;
+	background: url('../img/background-cochlate.jpg');
+	border-radius: 16px;
+}
+
+.stock-choclate h2{
+	color: var(--basic-white);
+	font-size:35px;
+	line-height: 41px;
+	font-weight: bold;
+	padding-top:16px;
+	padding-left: 16px;
+}
+
+.stock-choclate p{
+	color: var(--basic-white);
+	font-size:18px;
+	font-weight: bold;
+	line-height:22px;
+	padding-left: 16px;
+}
+
+.link-stock-jam {
+	width: 164px;
+	height: 32px;
+	background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+	box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+	border-radius: 70px;
+	text-align: center;
+	padding-top: 16px;
+}
+
+.link-stock-choclate {
+	width: 191px;
+	height: 48px;
+	background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+	box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+	border-radius: 70px;
+	text-align: center;
+	padding-top: 16px;
+
+}
+
+.link-stock-choclate a,
+.link-stock-jam a {
+	color: var(--basic-wite);
+	font-style: normal;
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.describe-shop {
+	width: 1146px;
+	height: 306px;
+	background-image: url('../img/background-waffle.jpg');
+	background-repeat: repeat;
+	margin-left: 26;
+	margin-right: 26;
+}
+
+.describe-shop h1 {
+	line-height: 30px;
+	font-size: 24px;
+	font-weight: 500;
+	color:var(--basic-black);
+}
+.describe-shop ul {
+	list-style: none;
+}
+
+.describe-shop li {
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--basic-black);
+	font-style: normal;
+	font-weight: normal;
+}
+
+.blog  {
+	width: 560px;
+	height: 220px;
+	background-image: url('../img/background-strawwbery.jpg');
+	background-repeat: no-repeat;
+	border-radius: 16px;
+
+}
+.blog p {
+	padding-left:20px;
+	padding-top:23px; 
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--basic-black);
+
+}
+
+.blog h2 {
+	padding-top: 0px;
+	padding-left:20px;
+	padding-bottom: 93px
+	font-style: normal;
+	font-weight: bold;
+	font-size: 24px;
+	line-height: 30px;
+	color:var(--basic-black);
+}
+
+.background-send {
+	width: 560px;
+    height: 220px;
+    background: url('..//img/background-send.svg');
+}
+
+.send-mail {
+	width: 548px;
+	height: 210px;
+	background-color: var(--basic-milk);
+	border-radius: 16px;
+}
+
+.send-mail p {
+	padding-top: 29px;
+	padding-right: 16px;
+	padding-left: 20px;
+	color: var(--basic-dyrty-green);
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: inherit;
+	font-style: normal;
+}
+
+.send-mail .e-mail {
+	width: 368px;
+    height: 44px;
+	box-sizing: border-box;
+	border-radius: 6px;
+	padding-left: 20px;
+	border: 1px solid rgba(178, 178, 178, 0.52);
+	}
+
+.button-send {
+	width: 130px;
+	height: 44px;
+	background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+	box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+	border-radius: 70px;
+
+}
+
+.wrapper-button {
+	display: inline-block;
+}
+
+.social-icon-facebook li::before {
+	content:pop;
+	background: url('../img/fb.svg');
+}

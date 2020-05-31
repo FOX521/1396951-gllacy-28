@@ -5,17 +5,18 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="main-navigation">
         <a>
         <img src="img/logo.svg" alt="Логотип Glacy Shop">
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li>
             <a href="catalog.html">Каталог</a> 
-            <ul>
+            <ul class="site-catalog">
               <li>
               	<a href="">Новинки</a>
               </li>  
@@ -42,12 +43,12 @@
         </ul>
       </nav>
       <a href="#">Поиск</a>
-      <div>
+      <div class="search">
       	<label  for="search" class="visually-hidden">Поиск</label>
           <input type="search" id="search" name="search" placeholder="Поиск">  	
-      </div>
-      <a href="#">Вход</a>
-      <div>
+      </div class="user-navigation">
+      <a class="login-link" href="#">Вход</a>
+      <div class="modal">
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             <label for="login-e-mail" class="visually-hidden">Логин</label>
@@ -68,52 +69,53 @@
       </div>
       <a href="#">Корзина</a>
       <section>
-        <p>
+        <p class="">
           с 10 до 20, ежедневно
         </p>
-        <a href="tel:88124502525">8 812 450-25-25</a>
+        <a class="" href="tel:88124502525">8 812 450-25-25</a>
       </section>
     </header>
     <main>
-      <h1>Интернет магазин мороженного </h1>
+      <h1 class="visually-hidden">Интернет магазин мороженного </h1>
       <section>
       	<ul>
       		<li>
-      			<a href="#">
-      			  <h2>Крем-брюле и пломбир с малиновым джемом</h2>
-      			</a>
+    		  <h2>Крем-брюле и пломбир с малиновым джемом</h2>
+    		  <a href="#">Давайте оба!</a>
       		</li>
       		<li>
-      			<a href="#">
-      			  <h2>Шоколадный пломбир и лимонный сорбет</h2>
-      			  </a>
+   			  <h2>Шоколадный пломбир и лимонный сорбет</h2>
+      		  <a href="#">Давайте оба!</a>
       		</li>
       		<li>
-      			<a href="#">
-      			  <h2>Пломбир с помадкой и клубничный щербет</h2>
-      			  </a>
+    		  <h2>Пломбир с помадкой и клубничный щербет</h2>
+        	  <a href="#">Давайте оба!</a>
       		</li>
       	</ul>
       	<div>
-      		<button type="button">Первый слайд</button>
-      		<button type="button">Второй слайд</button>
-      		<button type="button">Третий слайд</button>
+      		<button type="button" class="button">Первый слайд</button>
+      		<button type="button" class="button">Второй слайд</button>
+      		<button type="button" class="button">Третий слайд</button>
       	</div>
       </section>
       <section>
-        <article>
+        <article class="stock-rassbery">
           <h2>Малинка даром!</h2>
           <p>
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку маринового варенья бесплатно.
           </p>
-          <a href="#">Хочу варенье!</a>
+          <div class="link-stock-jam">
+          	<a href="#">Хочу варенье!</a>
+          </div>          
         </article>
-        <article>
+        <article class="stock-choclate">
           <h2>Шоколадки даром!</h2>
           <p>
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <a href="#">Хочу шоколадки!</a>
+          <div class="link-stock-choclate">
+            <a  href="#">Хочу шоколадки!</a>
+      	  </div>
         </article>
       </section>
       <section>
@@ -130,7 +132,7 @@
             <p>
               310 ₽/кг
             </p>
-            <button type="button">Быстрый просмотр</button>
+            <button type="button" class="button">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -144,7 +146,7 @@
             <p>
               380 ₽/кг
             </p>
-            <button type="button">Быстрый просмотр</button>
+            <button type="button" class="button">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -158,7 +160,7 @@
             <p>
               355 ₽/кг
             </p>
-            <button type="button">Быстрый просмотр</button>
+            <button type="button" class="button">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -172,17 +174,18 @@
             <p>
               415 ₽/кг
             </p>
-            <button type="button">Быстрый просмотр</button>
+            <button type="button" class="button">Быстрый просмотр</button>
           </li>
         </ul>
       </section>
-      <section>
+      <section >
+      	<div class="describe-shop">
         <h1>
-          Магазин Глейси - это онлайн и офлайн-магазин поп продаже мороженного собственного
+          Магазин Глейси - это онлайн и офлайн-магазин по продаже мороженного собственного
           производства на развес.
         </h1>
         <ul>
-          <li>
+          <li class="">
             Все наше мороженое изготавливается на собственном
             производстве, с использованием современного оборудования
             и проверенных временем технологий.   				
@@ -204,8 +207,9 @@
             растаять в пути и позволяет сохранить превосходный вкус.   				
           </li>
         </ul>
+        </div>
       </section>
-      <article>
+      <article class="blog">
         <p>Новое в нашем блоге</p>
         <a href="#">
           <h2>
@@ -215,7 +219,8 @@
           </h2>
         </a>
       </article>
-      <section>
+      <div class="background-send">
+      <section class="send-mail">
         <form action="https://echo.htmlacademy.ru" method="post">
           <p>
             Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>
@@ -224,25 +229,28 @@
           </p>
           <p>
             <label for="e-mail" class="visually-hidden">Почта</label>
-            <input type="email" name="e-mail" id="e-mail">             
+            <input  type="e-mail" class="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com">             
           </p>
-          <button type="button">Отправить</button>
+          <div class="wrapper-button">
+            <button type="submit" class="button-send">Отправить</button>
+          </div>
         </form>
+        </div
       </section>
       <section>
         <div>
           <img src="img/map.jpg" alt="ул. Большая Конюшенная, 19/8, Санкт-Петербург">
           <section>
-          	<address>
-          	<p>Адрес главного офиса<br>
-          	 и офлайн-магазина:</p>
-          	 <h3>ул. Большая Конюшенная,<br>
-          	 19/8, Санкт-Петербург</h3>
+           	<h3>Адрес главного офиса<br>
+          	 и офлайн-магазина:</h3>
+          	 <address>
+          	 ул. Большая Конюшенная,<br>
+          	 19/8, Санкт-Петербург
+          	 </address>
           	 <p>Для заказов по телефону:</p>
           	 <a href="tel:88124502525">8 812 450-25-25</a>
              <p>(с 10 до 20 ежедневно)</p>
-          	 <button type="button">Форма обратной связи</button>
-          	</address>
+          	 <a href="#">Форма обратной связи</a>
           </section>
         </div>
       </section>
@@ -304,7 +312,7 @@
         </p>
         <button type="submit">Отправить</button>  
       </form>
-      <button type="button">Закрыть</button>
+      <button type="button" class="button">Закрыть</button>
     </section>
   </body>
 </html>
