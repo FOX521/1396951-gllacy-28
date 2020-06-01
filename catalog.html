@@ -5,6 +5,7 @@
     <title>HTML Academy: Глейси</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"> 
   </head>
   <body>
     <header>
@@ -12,10 +13,10 @@
         <a class="main-heder-logo" href="index.html">
         <img src="img/logo.svg" alt="Логотип Glacy Shop"> 
         </a>
-       <ul class="site-catalog">
+       <ul class="site-navigation">
           <li>
             <a href="catalog.html">Каталог</a> 
-            <ul>
+            <ul class="sub-menu">
               <li>
                 <a href="">Новинки</a>
               </li>  
@@ -41,16 +42,16 @@
           </li>
         </ul>
       </nav>
-      <a href="#" >Поиск</a>
-      <div>
+      <a href="#" class="link-search">Поиск</a>
+      <div class="search-input">
         <label  for="search" class="visually-hidden">Поиск</label>
-          <input type="search" id="search" name="search" placeholder="Поиск">
-      </div class="user-navigation">
-      <a class="login-link" href="#">Вход</a>
-      <div>
-        <form action="https://echo.htmlacademy.ru">
+          <input type="search" id="search" class="visually-hidden" name="search" placeholder="Поиск">
+      </div>
+      <a class="user-navigation" href="#">Вход</a>
+      <div class="modal-search">
+        <form class="visually-hidden" action="https://echo.htmlacademy.ru">
           <p>
-            <label  for="login-e-mail" class="visually-hidden">Логин</label>
+            <label for="login-e-mail" class="visually-hidden">Логин</label>
             <input type="email" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">      
           </p>
           <p>
@@ -66,8 +67,8 @@
           </p>
         </form>
       </div>
-      <a href="#">Корзина</a>
-      <div>
+      <a href="#" class="link-busket">Корзина</a>
+      <div class="table">
         <table>
           <tr>
             <td><button type="button" class="button">Удалить</button></td>
@@ -87,9 +88,9 @@
             <td colspan="5">Итого:750 руб.</td>
           </tr>
         </table>
-        <a href="#">Оформить заказ</a>
+        <a href="#" class="button">Оформить заказ</a>
       </div>
-      <section>
+      <section class="time-working">
         <p>
           с 10 до 20, ежедневно
         </p>
@@ -108,9 +109,8 @@
           Сливочное мороженное
         </li>
       </ul>
-      <h1>Сливочное мороженное</h1>
-      <section>
-        <!--Form for filter-->
+      <h1 class="title-current-page">Сливочное мороженное</h1>
+      <section class="filter">
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
@@ -174,11 +174,11 @@
               </li>
             </ul>
           </fieldset>
-          <button type="submit" >Применить</button>
+          <button type="submit" class="button button-filter">Применить</button>
         </form>
       </section>
       <section>
-        <ul>
+        <ul class="order-list">
           <li>
             <a href="">
               <h3>Сливочное с апельсиновым джемом и цитрусовой стружкой</h3>
@@ -189,7 +189,7 @@
             <p>
               310 ₽/кг           
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -201,7 +201,7 @@
             <p>
               380 ₽/кг
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -213,7 +213,7 @@
             <p>
               355 ₽/кг
             </p>
-            <button type='button'>Быстрый просмотр</button>
+            <button type='button' class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -225,7 +225,7 @@
             <p>
               415 ₽/кг
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -237,7 +237,7 @@
             <p>
               325 ₽/кг
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -249,7 +249,7 @@
             <p>
               410 ₽/кг
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -261,7 +261,7 @@
             <p>
               315 ₽/кг
             </p>
-            <button type="button8">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -273,7 +273,7 @@
             <p>
               320 ₽/кг
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -285,7 +285,7 @@
             <p>
               440 ₽/кг
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -297,7 +297,7 @@
             <p>
               435 ₽/кг
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -309,7 +309,7 @@
             <p>
               355 ₽/кг
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
           <li>
             <a href="#">
@@ -321,10 +321,10 @@
             <p>
               420 ₽/кг
             </p>
-            <button type="button" class="button">Быстрый просмотр</button>
+            <button type="button" class="button fast-view">Быстрый просмотр</button>
           </li>
         </ul>
-        <ul>
+        <ul class="navigation-page">
           <li>
             <a href="#">1</a>
           </li>
@@ -344,7 +344,7 @@
       </section>
     </main>
     <footer>
-      <section>
+      <section class="socials">
         <ul>
           <li>
             <a href="#">Фейсбук</a>
@@ -360,7 +360,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="info-company">
         <h2>Для поставщиков</h2>
         <ul>
           <li>
@@ -379,7 +379,7 @@
         <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="Логотип академии">
         </a>
       </p>
-      <p>
+      <p class="logo">
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </footer>

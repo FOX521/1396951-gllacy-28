@@ -10,13 +10,13 @@
   <body>
     <header>
       <nav class="main-navigation">
-        <a>
+        <a class="main-heder-logo">
         <img src="img/logo.svg" alt="Логотип Glacy Shop">
         </a>
         <ul class="site-navigation">
           <li>
             <a href="catalog.html">Каталог</a> 
-            <ul class="site-catalog">
+            <ul class="sub-menu">
               <li>
               	<a href="">Новинки</a>
               </li>  
@@ -42,14 +42,14 @@
           </li>
         </ul>
       </nav>
-      <a href="#">Поиск</a>
-      <div class="search">
+      <a href="#" class="link-search">Поиск</a>
+      <div class="search-input">
       	<label  for="search" class="visually-hidden">Поиск</label>
-          <input type="search" id="search" name="search" placeholder="Поиск">  	
-      </div class="user-navigation">
-      <a class="login-link" href="#">Вход</a>
-      <div class="modal">
-        <form action="https://echo.htmlacademy.ru" method="post">
+          <input type="search" id="search" class="visually-hidden" name="search" placeholder="Поиск">  	
+      </div>
+      <a class="user-navigation" href="#">Вход</a>
+      <div class="modal-search">
+        <form class="visually-hidden" action="https://echo.htmlacademy.ru">
           <p>
             <label for="login-e-mail" class="visually-hidden">Логин</label>
             <input type="email" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">      
@@ -67,16 +67,16 @@
           </p>
         </form>
       </div>
-      <a href="#">Корзина</a>
-      <section>
-        <p class="">
+      <a href="#" class="link-busket">Корзина</a>
+      <section class="time-working">
+        <p>
           с 10 до 20, ежедневно
         </p>
-        <a class="" href="tel:88124502525">8 812 450-25-25</a>
+        <a href="tel:88124502525">8 812 450-25-25</a>
       </section>
     </header>
     <main>
-      <h1 class="visually-hidden">Интернет магазин мороженного </h1>
+      <h1 class="visually-hidden">Интернет магазин мороженного</h1>
       <section>
       	<ul>
       		<li>
@@ -93,29 +93,25 @@
       		</li>
       	</ul>
       	<div>
-      		<button type="button" class="button">Первый слайд</button>
-      		<button type="button" class="button">Второй слайд</button>
-      		<button type="button" class="button">Третий слайд</button>
+      		<button type="button">Первый слайд</button>
+      		<button type="button">Второй слайд</button>
+      		<button type="button">Третий слайд</button>
       	</div>
       </section>
-      <section>
-        <article class="stock-rassbery">
+      <section class="offers">
+        <article class="offers-item offers-item-rassbery">
           <h2>Малинка даром!</h2>
           <p>
             При покупке 2 кг любого фруктового мороженого, добавим в ваш заказ банку маринового варенья бесплатно.
           </p>
-          <div class="link-stock-jam">
-          	<a href="#">Хочу варенье!</a>
-          </div>          
+          	<a href="#" class="button button-offer-rassbery">Хочу варенье!</a>          
         </article>
-        <article class="stock-choclate">
+        <article class="offers-item offers-item-choclate">
           <h2>Шоколадки даром!</h2>
           <p>
             При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
           </p>
-          <div class="link-stock-choclate">
-            <a  href="#">Хочу шоколадки!</a>
-      	  </div>
+            <a href="#" class="button button-offer-choclate">Хочу шоколадки!</a>
         </article>
       </section>
       <section>
@@ -220,9 +216,9 @@
         </a>
       </article>
       <div class="background-send">
-      <section class="send-mail">
-        <form action="https://echo.htmlacademy.ru" method="post">
-          <p>
+      <section class="subscribe">
+        <form  class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
+          <p class="offer-subscribe">
             Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>
             всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
             и не слать всякой ненужной ерунды. Честно =)
@@ -231,16 +227,14 @@
             <label for="e-mail" class="visually-hidden">Почта</label>
             <input  type="e-mail" class="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com">             
           </p>
-          <div class="wrapper-button">
-            <button type="submit" class="button-send">Отправить</button>
-          </div>
+            <button type="submit" class="button button-send">Отправить</button>
         </form>
-        </div
       </section>
+  	  </div>
       <section>
-        <div>
+        <div class="contacts">
           <img src="img/map.jpg" alt="ул. Большая Конюшенная, 19/8, Санкт-Петербург">
-          <section>
+          <section class="info-work">
            	<h3>Адрес главного офиса<br>
           	 и офлайн-магазина:</h3>
           	 <address>
@@ -250,13 +244,13 @@
           	 <p>Для заказов по телефону:</p>
           	 <a href="tel:88124502525">8 812 450-25-25</a>
              <p>(с 10 до 20 ежедневно)</p>
-          	 <a href="#">Форма обратной связи</a>
+          	 <a href="#" class="button button-feedback">Форма обратной связи</a>
           </section>
         </div>
       </section>
     </main>
     <footer>
-      <section>
+      <section class="socials">
         <ul>
           <li>
             <a href="#">Фейсбук</a>
@@ -272,7 +266,7 @@
           </li>
         </ul>
       </section>
-      <section>
+      <section class="info-company">
         <h2>Для поставщиков</h2>
         <ul>
           <li>
@@ -291,11 +285,11 @@
         <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="Логотип компании">
         </a>
       </p>
-      <p>
+      <p class="logo">
         Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
       </p>
     </footer>
-    <section>
+    <section class="visually-hidden">
       <form action="https://echo.htmlacademy.ru" method="post">
         <h2>Мы обязательно вам ответим!</h2>
         <p>        	

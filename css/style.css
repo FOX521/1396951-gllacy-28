@@ -1,13 +1,14 @@
 /*Variables*/
 :root{
 	--basic-green: #849D8F;
-	--basic-grey:#8996A6;
-	--basic-pink:#9D8B84;
+	--basic-grey: #8996A6;
+	--basic-pink: #9D8B84;
 	--basic-black: #323232;
-	--basic-white:#ffffff;
-	--basic-link:#D07058;
-	--basic-dyrty-green:#5A5A5A;
-	--basic-milk:#F8F7F4;;
+	--basic-white: #ffffff;
+	--basic-link: #D07058;
+	--basic-dyrty-green: #5A5A5A;
+	--basic-milk: #F8F7F4;
+	--basic-border-color: rgba(178, 178, 178, 0.52);
 
 }
 
@@ -17,8 +18,8 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto";
-	font-size:16px; 
-	line-height:22px;
+	font-size: 16px; 
+	line-height: 22px;
 	font-weight: normal;
 	color: var(--basic-white);
 	background-color: var(--basic-green);
@@ -26,16 +27,38 @@ body {
 	background-position: top center;
 	background-repeat: no-repeat;
 }
+
 img{
 	max-width: 100%;
 	height: auto;}
 
-a{text-decoration: none;}
-
-.visually-hidden{
-	display: none ;
+a{
+	text-decoration: none;
+	color: var(--basic-white);
 }
 
+
+.button{
+	background:  linear-gradient(180deg, #F26843 0%, #E74A35 100%);
+	border:transparent;
+	box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
+	border-radius: 70px;
+	color: var(--basic-white);
+}
+
+.visually-hidden:not(:focus):not(:active) {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
 
 .main-navigation {
 	line-height: 18px;
@@ -43,16 +66,15 @@ a{text-decoration: none;}
 	color: var(--basic-white);
 	background-color: transparent;
 }
-
-.site-navigation li {
+/*Не срабатывает стиль к дочерним элементам. Не могу убрать подчеркивание */
+.site-navigation   {
 	list-style: none;
 	text-decoration: underline;
-	
 }
 
-.site-catalog {
+.sub-menu > li  {
 	list-style: none;
-	text-decoration: underline;
+	text-decoration: none;
 }
 
 .site-navigation a,
@@ -67,54 +89,70 @@ a{text-decoration: none;}
 	background-color: var(--basic-link);
 }
 
-
-.stock-rassbery {
-	width: 560px;
-	height: 229px;
-	background: url('../img/background-rassbery.jpg');
-	border-radius:16px;
+.link-search::before {
+	background-image: url('../img/basket.svg'); /*Хотел вставить изображения иконок , но что то не плучается*/
 }
 
-.stock-rassbery h2{
+
+.time-working p {
+	font-size: 14px;
+	line-height: 16px;
 	color: var(--basic-white);
-	font-size:35px;
+	font-weight: bold;
+}
+
+.time-working a {
+	font-size: 22px;
+	line-height: 24px;
+	color: var(--basic-white);
+	font-weight: bold;
+}
+
+
+.offers-item h2 {
+	color: var(--basic-white);
+	font-size: 35px;
 	line-height: 41px;
 	font-weight: bold;
-	padding-top:16px;
+	padding-top: 16px;
 	padding-left: 16px;
 }
 
-.stock-rassbery p{
+.offers-item p {
 	color: var(--basic-white);
-	font-size:18px;
+	font-size: 18px;
 	font-weight: bold;
-	line-height:22px;
+	line-height: 22px;
 	padding-left: 16px;
 }
 
-.stock-choclate {
+.offers-item-rassbery {
 	width: 560px;
 	height: 229px;
+	background-color: var(--basic-white);
+	background-image: url('../img/background-rassbery.jpg');
+	border-radius: 16px;
+}
+
+.button-offer-rassbery {
+	width: 164px;
+	height: 48px;
+}
+
+.button-offer-choclate {
+	width: 191px;
+	height: 48px;
+}
+
+
+.offers-item-choclate {
+	width: 560px;
+	height: 229px;
+	background-color: var(--basic-black);
 	background: url('../img/background-cochlate.jpg');
 	border-radius: 16px;
 }
 
-.stock-choclate h2{
-	color: var(--basic-white);
-	font-size:35px;
-	line-height: 41px;
-	font-weight: bold;
-	padding-top:16px;
-	padding-left: 16px;
-}
-
-.stock-choclate p{
-	color: var(--basic-white);
-	font-size:18px;
-	font-weight: bold;
-	line-height:22px;
-	padding-left: 16px;
-}
 
 .link-stock-jam {
 	width: 164px;
@@ -153,13 +191,17 @@ a{text-decoration: none;}
 	background-repeat: repeat;
 	margin-left: 26;
 	margin-right: 26;
+	border: 1px solid transparent;
+	border-radius: 16px;
 }
 
 .describe-shop h1 {
 	line-height: 30px;
 	font-size: 24px;
-	font-weight: 500;
+	font-weight: 700;
 	color:var(--basic-black);
+	margin-top: 24px;
+	margin-left: 20px;
 }
 .describe-shop ul {
 	list-style: none;
@@ -179,11 +221,12 @@ a{text-decoration: none;}
 	background-image: url('../img/background-strawwbery.jpg');
 	background-repeat: no-repeat;
 	border-radius: 16px;
+	border:1px solid transparent;
 
 }
 .blog p {
-	padding-left:20px;
-	padding-top:23px; 
+	margin-left: 20px;
+	margin-top: 23px; 
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
@@ -193,32 +236,39 @@ a{text-decoration: none;}
 
 .blog h2 {
 	padding-top: 0px;
-	padding-left:20px;
+	padding-left: 20px;
 	padding-bottom: 93px
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
 	line-height: 30px;
-	color:var(--basic-black);
+	color: var(--basic-black);
+	text-decoration: underline;
 }
 
 .background-send {
-	width: 560px;
-    height: 220px;
+	width: 558px;
+    height: 218px;
     background: url('..//img/background-send.svg');
+    border: 1px solid transparent;
 }
 
-.send-mail {
-	width: 548px;
-	height: 210px;
+.subscribe,
+.form-subscribe {
+	width: 546px;
+	height: 208px;
+	border: 1px solid transparent;
+}
+
+.subscribe{
 	background-color: var(--basic-milk);
+	border: 1px solid transparent;
 	border-radius: 16px;
+	margin: 5px 6px 5px 6px;
 }
 
-.send-mail p {
-	padding-top: 29px;
-	padding-right: 16px;
-	padding-left: 20px;
+.offer-subscribe {
+	margin-left: 20px;
 	color: var(--basic-dyrty-green);
 	font-size: 16px;
 	line-height: 22px;
@@ -226,7 +276,8 @@ a{text-decoration: none;}
 	font-style: normal;
 }
 
-.send-mail .e-mail {
+.subscribe  .e-mail {
+	margin-left: 20px;
 	width: 368px;
     height: 44px;
 	box-sizing: border-box;
@@ -235,20 +286,176 @@ a{text-decoration: none;}
 	border: 1px solid rgba(178, 178, 178, 0.52);
 	}
 
+/*Не понял почему размеры кнопки не меняются. Сделал один класс стилистический , а второй  по размерам.*/
 .button-send {
 	width: 130px;
 	height: 44px;
-	background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-	box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-	border-radius: 70px;
-
+	font-size:18px;
+	line-height: 24px;
+	font-weight: bold;
 }
 
-.wrapper-button {
-	display: inline-block;
+.info-work {
+	background-color: var(--basic-white);
+	width: 303px;
+	height: 306px;
+	color: var(--basic-black);
+	border-radius: 16px;
+	border:1px solid transparent;
 }
 
-.social-icon-facebook li::before {
-	content:pop;
-	background: url('../img/fb.svg');
+
+.info-work h3 {
+	margin-top: 32px;
+	margin-left: 24px;
+	font-size: 14px;
+	line-height: 20px;
+	font-weight: normal;
+	font-style: normal;
+}
+	
+.info-work p {
+	margin-left: 25px;
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.info-work address {
+	margin-top: 8px;
+	margin-left: 25px;
+	margin-bottom: 30px;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.info-work a {
+	margin-top: 11px;
+	margin-left: 25px;
+	font-size: 18px;
+	line-height: 24px;
+	font-weight: bold;
+	color: var(--basic-black);
+}
+
+.info-work .button-feedback {
+	color: var(--basic-white);
+}
+
+.socials ul {
+	list-style: none;
+}
+
+.info-company {
+	text-decoration: underline;
+}
+
+.info-company ul {
+	list-style: none;
+}
+
+.info-company h2 {
+	font-weight: bold;
+	font-size: 13px;
+	line-height: 18px;
+}
+
+.info-company li {
+	font-size: 13px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+.logo {
+	font-size: 12px;
+	line-height: 18px;
+	font-weight: normal;
+}
+
+
+/*Style for Catalog*/
+
+.table {
+	width: 539px;
+	height: 242px;
+	background-color: var(--basic-milk);
+	color: var(--basic-black);
+	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
+	border-radius: 4px;
+}
+
+.filter {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--basic-white);
+}
+
+.filter legend {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 18px;
+}
+
+.title-current-page {
+	font-weight: bold;
+	font-size: 35px;
+	line-height: 41px;
+}
+
+.filter fieldset {
+	border:none;
+}
+
+.button-filter {
+	width: 144px;
+	height: 36px;
+	background: rgba(255, 255, 255, 0.2);
+	border: 2px solid #FFFFFF;
+	box-sizing: border-box;
+	border-radius: 20px;
+}
+
+.order-list {
+	list-style: none;
+}
+
+.order-list li {
+	width: 267px;
+}
+
+.order-list h3 {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	color: var(--basic-white);
+}
+
+.order-list p {
+	font-family: Roboto;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 45px;
+	line-height: 45px;
+	color: var(--basic-white);
+}
+
+.order-list img {
+	border-radius: 50%;
+}
+
+.fast-view {
+	width: 200px;
+	height: 44px;
+	border-radius: 50px;
+	box-shadow: 0px 1px 2px #AC1000;
+}
+
+.navigation-page {
+	list-style: none;
 }
