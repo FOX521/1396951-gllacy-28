@@ -17,7 +17,7 @@ body {
 	min-width: 1200px;	
 	margin: 0;
 	padding: 0;
-	font-family: "Roboto";
+	font-family: "Roboto", "Arial", sans-serif;
 	font-size: 16px; 
 	line-height: 22px;
 	font-weight: normal;
@@ -89,9 +89,6 @@ a{
 	background-color: var(--basic-link);
 }
 
-.link-search::before {
-	background-image: url('../img/basket.svg'); /*Хотел вставить изображения иконок , но что то не плучается*/
-}
 
 
 .time-working p {
@@ -154,43 +151,38 @@ a{
 }
 
 
-.link-stock-jam {
-	width: 164px;
-	height: 32px;
-	background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-	box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-	border-radius: 70px;
-	text-align: center;
-	padding-top: 16px;
+.xit-list {
+	list-style: none;	
+	color: var(--basic-white);
 }
 
-.link-stock-choclate {
-	width: 191px;
-	height: 48px;
-	background: linear-gradient(180deg, #F26843 0%, #E74A35 100%);
-	box-shadow: 0px 2px 2px rgba(172, 16, 0, 0.64);
-	border-radius: 70px;
-	text-align: center;
-	padding-top: 16px;
-
+.xit-list h3 {
+	font-size: 16px;
+	line-height: 22px;
+	font-weight: 500;
 }
 
-.link-stock-choclate a,
-.link-stock-jam a {
-	color: var(--basic-wite);
-	font-style: normal;
+.xit-list p {
 	font-weight: bold;
-	font-size: 18px;
-	line-height: 24px;
+	font-size: 45px;
+	line-height: 45px;
+}
+
+.xit-list img {
+	border-radius: 50%;
 }
 
 .describe-shop {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.describe-shop div {
 	width: 1146px;
 	height: 306px;
 	background-image: url('../img/background-waffle.jpg');
-	background-repeat: repeat;
-	margin-left: 26;
-	margin-right: 26;
+	background-repeat: repeat;	
 	border: 1px solid transparent;
 	border-radius: 16px;
 }
@@ -221,9 +213,9 @@ a{
 	background-image: url('../img/background-strawwbery.jpg');
 	background-repeat: no-repeat;
 	border-radius: 16px;
-	border:1px solid transparent;
-
+	border: 1px solid transparent;
 }
+
 .blog p {
 	margin-left: 20px;
 	margin-top: 23px; 
@@ -237,7 +229,6 @@ a{
 .blog h2 {
 	padding-top: 0px;
 	padding-left: 20px;
-	padding-bottom: 93px
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
@@ -288,8 +279,6 @@ a{
 
 /*Не понял почему размеры кнопки не меняются. Сделал один класс стилистический , а второй  по размерам.*/
 .button-send {
-	width: 130px;
-	height: 44px;
 	font-size:18px;
 	line-height: 24px;
 	font-weight: bold;
@@ -302,6 +291,9 @@ a{
 	color: var(--basic-black);
 	border-radius: 16px;
 	border:1px solid transparent;
+	position: absolute;
+	left: 870px;
+	top: 1745px;
 }
 
 
@@ -428,7 +420,7 @@ a{
 }
 
 .order-list h3 {
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 500;
 	font-size: 16px;
@@ -437,7 +429,7 @@ a{
 }
 
 .order-list p {
-	font-family: Roboto;
+	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 45px;
@@ -458,4 +450,65 @@ a{
 
 .navigation-page {
 	list-style: none;
+}
+
+.contacts {
+	border: 1px solid transparent;
+}
+
+/*Grid*/
+
+.page {
+	height: 100%;
+}
+
+
+.page-body {
+	display: grid;
+	height: 100%;
+	grid-template-rows: min-content 1fr min-content;
+	align-content: flex-start;
+}
+
+.main-header {
+	margin-bottom: 70px;
+   	outline: 5px solid rgba(0, 255, 0, 0.3);
+  	outline-offset: -5px;
+}
+
+
+.offers {
+	display: flex;
+	justify-content: space-around;
+}
+
+.xit-list {
+	display: flex;
+	justify-content: space-around;
+}
+.main-footer {
+	display: flex;
+	justify-content: space-around;
+}
+
+.wrapper-blog-describe {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 40px;
+	margin-bottom: 40px;
+}
+ 
+.order-list {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.navigation-page {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.navigation-page a {
+	margin-right: 20px;
 }
