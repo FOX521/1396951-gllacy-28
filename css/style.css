@@ -30,12 +30,17 @@ body {
 
 img{
 	max-width: 100%;
-	height: auto;}
+	height: auto;
+}
 
 a{
 	text-decoration: none;
 	color: var(--basic-white);
 }
+
+*, *::before, *::after { 
+	box-sizing: border-box;
+ }
 
 
 .button{
@@ -66,7 +71,7 @@ a{
 	color: var(--basic-white);
 	background-color: transparent;
 }
-/*Не срабатывает стиль к дочерним элементам. Не могу убрать подчеркивание */
+
 .site-navigation   {
 	list-style: none;
 	text-decoration: underline;
@@ -111,8 +116,9 @@ a{
 	font-size: 35px;
 	line-height: 41px;
 	font-weight: bold;
-	padding-top: 16px;
-	padding-left: 16px;
+	margin-left: 16px;
+	margin-top: 16px;
+	margin-bottom: 16px;
 }
 
 .offers-item p {
@@ -129,16 +135,29 @@ a{
 	background-color: var(--basic-white);
 	background-image: url('../img/background-rassbery.jpg');
 	border-radius: 16px;
+	position: relative;
 }
 
 .button-offer-rassbery {
-	width: 164px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width:164px;
 	height: 48px;
+	position: absolute;
+	left: 374px;
+	bottom: 22px;
 }
 
 .button-offer-choclate {
-	width: 191px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 190px;
 	height: 48px;
+	position: absolute;
+	left: 347px;
+	bottom: 22px;	
 }
 
 
@@ -148,29 +167,10 @@ a{
 	background-color: var(--basic-black);
 	background: url('../img/background-cochlate.jpg');
 	border-radius: 16px;
+	position: relative;
 }
 
 
-.xit-list {
-	list-style: none;	
-	color: var(--basic-white);
-}
-
-.xit-list h3 {
-	font-size: 16px;
-	line-height: 22px;
-	font-weight: 500;
-}
-
-.xit-list p {
-	font-weight: bold;
-	font-size: 45px;
-	line-height: 45px;
-}
-
-.xit-list img {
-	border-radius: 50%;
-}
 
 .describe-shop {
 	display: flex;
@@ -197,6 +197,19 @@ a{
 }
 .describe-shop ul {
 	list-style: none;
+	display: grid;
+	gap: 25px;
+	grid-template-areas: 
+		"grid-element-1 grid-element-3"
+		"grid-element-2 grid-element-4";
+}
+
+.grid-element-1 {
+	grid-area: grid-element-1;
+}
+
+.grid-element-2{
+	grid-area: grid-element-2;
 }
 
 .describe-shop li {
@@ -205,6 +218,7 @@ a{
 	color: var(--basic-black);
 	font-style: normal;
 	font-weight: normal;
+	flex-grow: 1;
 }
 
 .blog  {
@@ -219,6 +233,7 @@ a{
 .blog p {
 	margin-left: 20px;
 	margin-top: 23px; 
+	margin-bottom: 0px;
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 22px;
@@ -227,8 +242,8 @@ a{
 }
 
 .blog h2 {
-	padding-top: 0px;
-	padding-left: 20px;
+	margin-top: 0px;
+	margin-left: 20px;
 	font-style: normal;
 	font-weight: bold;
 	font-size: 24px;
@@ -256,6 +271,7 @@ a{
 	border: 1px solid transparent;
 	border-radius: 16px;
 	margin: 5px 6px 5px 6px;
+	position: relative;
 }
 
 .offer-subscribe {
@@ -270,18 +286,26 @@ a{
 .subscribe  .e-mail {
 	margin-left: 20px;
 	width: 368px;
-    height: 44px;
+  height: 44px;
 	box-sizing: border-box;
 	border-radius: 6px;
 	padding-left: 20px;
 	border: 1px solid rgba(178, 178, 178, 0.52);
+	position: absolute;
+	bottom: 36px;
 	}
 
-/*Не понял почему размеры кнопки не меняются. Сделал один класс стилистический , а второй  по размерам.*/
+
 .button-send {
 	font-size:18px;
 	line-height: 24px;
 	font-weight: bold;
+	text-align: center;
+	position: absolute;
+	width: 130px;
+  height: 44px;
+	bottom:36px;
+	left: 399px;
 }
 
 .info-work {
@@ -293,7 +317,7 @@ a{
 	border:1px solid transparent;
 	position: absolute;
 	left: 870px;
-	top: 1745px;
+	top: 62px;
 }
 
 
@@ -329,10 +353,15 @@ a{
 	line-height: 24px;
 	font-weight: bold;
 	color: var(--basic-black);
+	position: relative;
 }
 
 .info-work .button-feedback {
 	color: var(--basic-white);
+	position: absolute;
+	width: 253px;
+	bottom: 15px;
+  text-align: center;	
 }
 
 .socials ul {
@@ -377,6 +406,15 @@ a{
 	border-radius: 4px;
 }
 
+.bread-crumbs {
+	list-style: none;
+	display: flex;
+}
+
+.bread-crumbs a {
+	padding-right: 22px;
+}
+
 .filter {
 	font-style: normal;
 	font-weight: 500;
@@ -413,6 +451,9 @@ a{
 
 .order-list {
 	list-style: none;
+	display: grid;
+	align-items: end;
+	grid-template-columns: 267px 267px 267px 267px;
 }
 
 .order-list li {
@@ -454,6 +495,8 @@ a{
 
 .contacts {
 	border: 1px solid transparent;
+	position: relative;
+	width: 100%;
 }
 
 /*Grid*/
@@ -472,24 +515,117 @@ a{
 
 .main-header {
 	margin-bottom: 70px;
-   	outline: 5px solid rgba(0, 255, 0, 0.3);
-  	outline-offset: -5px;
+	width: 1146px;
+	margin:0 auto;
+  	display: flex;
+  	flex-wrap: wrap;
+  	justify-content: space-between;
+  	align-items: stretch;
+  	border: 1px solid transparent;
+  }
+
+ .main-navigation{
+ 	flex-grow: 2;
+ }
+
+.main-navigation a{
+ 	flex-grow: 1;
+ 	padding-top: 31px;
+ 	padding-left: 32px;
+ }
+
+
+.site-navigation {
+	display: flex;
 }
 
+.private-office {
+	display: flex;
+	justify-content: flex-end;
+	flex-grow: 1;
+}
+
+.private-office a {
+	padding-right: 10px;
+	padding-top: 15px;
+	}
+
+.time-working {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+	flex-grow: 1;
+}
+
+
+.main-container {
+	margin: 0 auto;
+	width: 1148px;
+}
 
 .offers {
 	display: flex;
 	justify-content: space-around;
 }
 
-.xit-list {
-	display: flex;
-	justify-content: space-around;
-}
+
 .main-footer {
 	display: flex;
+	width: 1200px;
 	justify-content: space-around;
+	margin: 0 auto;
 }
+
+.socials {
+	display: flex;
+	align-items: center;
+}
+
+.social-list {
+	font-size: 13px;
+	display: flex;
+	gap: 12px;
+}
+
+.info-list {
+	font-size: 13px;
+  line-height: 18px;
+	width: 327px;
+	display: grid;
+	justify-content: center;
+	align-items: center;
+	column-gap: 32px;
+	grid-template-areas: 
+		"grid-info-list-1 grid-info-list-3"
+		"grid-info-list-2 grid-info-list-4"
+
+}
+
+.grid-info-list-1 {
+	grid-area: grid-info-list-1;
+}
+
+.grid-info-list-2 {
+	grid-area: grid-info-list-2;
+}
+
+
+.copyright {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
+}
+
+.copyright img {
+	margin-top: 18px;
+	margin-right: 90px;
+}
+
+.copyright p {
+	margin-top: 0px;
+}
+
 
 .wrapper-blog-describe {
 	display: flex;
@@ -498,12 +634,6 @@ a{
 	margin-bottom: 40px;
 }
  
-.order-list {
-	display: flex;
-	justify-content: space-around;
-	flex-wrap: wrap;
-}
-
 .navigation-page {
 	display: flex;
 	justify-content: flex-end;
