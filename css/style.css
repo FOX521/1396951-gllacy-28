@@ -51,6 +51,10 @@ a{
 	width: 1200px;
 }
 
+.container:second-child {
+  position: absolute;
+}
+
 
 
 .button{
@@ -383,8 +387,8 @@ a{
 
 .site-wrapper {
 	min-width: 940px;
-  	background-repeat: no-repeat;
-  	background-position: top center;
+	background-repeat: no-repeat;
+  background-position: top center;
 }
 
 .site-wrapper-1 {
@@ -566,10 +570,10 @@ a{
 }
 .describe-shop ul {
 	list-style: none;
-	display: flex;
-	flex-wrap: wrap;
-	column-gap:25px;
-	row-gap: 33px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap:25px;
+  row-gap: 33px;
 }
 
 .describe-shop li {
@@ -759,25 +763,17 @@ a{
   display: block;
 }
 
-.socials ul {
+.info-list  {
 	list-style: none;
 }
 
-.info-company {
-	text-decoration: underline;
-}
-
-.info-company ul {
-	list-style: none;
-}
-
-.info-company h2 {
+.info-list h2 {
 	font-weight: bold;
 	font-size: 13px;
 	line-height: 18px;
 }
 
-.info-company li {
+.info-list li {
 	font-size: 13px;
 	line-height: 18px;
 	font-weight: normal;
@@ -809,6 +805,7 @@ a{
   display:block;
 }
 .bread-crumbs {
+  top:100px;
 	list-style: none;
 	display: flex;
 }
@@ -1000,13 +997,11 @@ a{
 }
 
 .main-header {
-    margin-bottom: 70px;
     margin:0 auto;
-  	display: flex;
-  	flex-wrap: wrap;
+    display: flex;
   	justify-content: space-between;
-  	align-items: stretch;
-  	border: 1px solid transparent;
+    border: 1px solid transparent;
+    position: relative;
   }
 
  .main-navigation{
@@ -1042,14 +1037,12 @@ a{
 	display: flex;
 	flex-direction: column;
 	align-items: flex-end;
-	flex-grow: 1;
+  flex-grow: 1;
+  position: absolute;
+  top: 75px;
+  right: 30px;
 }
 
-
-.main-container {
-	margin: 0 auto;
-	width: 1148px;
-}
 
 .offers {
 	display: flex;
@@ -1062,19 +1055,16 @@ a{
 	justify-content: space-between;
 }
 
-.socials  {
-	width: 250px;
-	display: flex;
-	align-items: center;
-}
 
 .social-list  {
+  list-style: none;
 	padding: 0;
 	margin: 0;
 	width: 166px;
 	height: 33px;
 	font-size: 13px;
-	display: flex;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 	column-gap: 44px;
 }
 
@@ -1220,7 +1210,7 @@ a{
 
 .wrapper-blog-describe {
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	margin-top: 40px;
 	margin-bottom: 40px;
 }

@@ -10,7 +10,7 @@
   <body class="page-body">
     <header class="main-header container">
       <a href="index.html">
-        <img class="main-heder-logo"src="img/logo.svg" alt="Логотип Glacy Shop">
+        <img class="main-heder-logo" src="img/logo.svg" alt="Логотип Glacy Shop">
         </a>
       <nav class="main-navigation">
         <ul class="site-navigation">
@@ -103,6 +103,7 @@
         <a href="#" class="button">Оформить заказ</a>
       </div>
       <section class="time-working">
+        <h2 class="visyally-hidden">Вркмя работы</h2>
         <p>
           с 10 до 20, ежедневно
         </p>
@@ -110,7 +111,6 @@
       </section>
     </header>
     <main class="container">
-      <div class="main-container">
       <ul class="bread-crumbs">
         <li>
           <a href="index.html">Главная</a>
@@ -124,11 +124,12 @@
       </ul>
       <h1 class="title-current-page">Сливочное мороженное</h1>
       <section class="filter">
+        <h2 class="visually-hidden">Фильтр товаров</h2>
         <form action="https://echo.htmlacademy.ru" method="get">
           <fieldset>
             <legend>Сортировка:</legend>
                 <label for="select" class="visually-hidden">Сортировка</label>
-                  <select type="select"  id="select" name="sort">
+                  <select id="select" name="sort">
                     <option value="most-popular">по популярности</option>
                     <option value="cheap">сначала недорогие</option>
                     <option value="expensive">сначала дорогие</option>
@@ -179,7 +180,7 @@
               </li>
               <li>
                 <input type="checkbox" name="siroup" id="siroup">
-                <label fro="siroup">Сиропы</label>
+                <label for="siroup">Сиропы</label>
               </li>
               <li>
                 <input  type="checkbox" name="jam" id="jam">
@@ -292,7 +293,7 @@
             <a class="link-order-title" href="#">
               <h3>Сливочно-ванильное с кусочками шоколада</h3>
             </a>
-            <a class="class="link-order-img" href="#">
+            <a class="link-order-img" href="#">
             <img src="img/photo9.jpg"  width="150" height="150" alt="Кусочки шоколада с ванильным мороженным">
             </a>
             <p class="cut">
@@ -355,10 +356,8 @@
           </li>
         </ul>
       </section>
-    </div>
     </main>
     <footer class="main-footer container">
-      <section class="socials">
         <ul class="social-list">
           <li>
             <a href="#" class="fb-icon"><span class="visually-hidden">Фейсбук</span></a>
@@ -373,8 +372,6 @@
             <a href="#" class="twit-icon"><span class="visually-hidden">Твитер</span></a>
           </li>
         </ul>
-      </section>
-      <section class="info-company">
         <ul class="info-list">
           <li class="flex-info-list-1">
             <h2>Для поставщиков</h2>
@@ -389,8 +386,8 @@
             <a href="#">Экологические стандарты</a>
           </li>
         </ul>
-      </section>
       <section class="copyright">
+        <h2 class="visually-hidden">Копирайт</h2>
       <p>
         <a href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="Логотип академии">
