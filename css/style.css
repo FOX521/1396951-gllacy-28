@@ -847,6 +847,12 @@ a{
 	line-height: 18px;
 }
 
+.form-filter {
+	display: flex;
+	flex-wrap: wrap;
+	width: 869px;
+}
+
 .title-current-page {
 	font-weight: bold;
 	font-size: 35px;
@@ -856,6 +862,16 @@ a{
 .filter fieldset {
 	border:none;
 }
+
+.price ul,
+.choise-precent-fat ul,
+.additives ul{
+	display: flex;
+	list-style: none;
+}
+
+
+
 
 .button-filter {
 	width: 144px;

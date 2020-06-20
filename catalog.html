@@ -103,7 +103,7 @@
         <a href="#" class="button">Оформить заказ</a>
       </div>
       <section class="time-working">
-        <h2 class="visyally-hidden">Вркмя работы</h2>
+        <h2 class="visually-hidden">Время работы</h2>
         <p>
           с 10 до 20, ежедневно
         </p>
@@ -125,8 +125,8 @@
       <h1 class="title-current-page">Сливочное мороженное</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
-        <form action="https://echo.htmlacademy.ru" method="get">
-          <fieldset>
+        <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
+          <fieldset class="popular-pattern">
             <legend>Сортировка:</legend>
                 <label for="select" class="visually-hidden">Сортировка</label>
                   <select id="select" name="sort">
@@ -136,13 +136,13 @@
                     <option value="in-fat">по жирности</option>
                   </select>
           </fieldset>
-          <fieldset>
+          <fieldset class="price">
             <legend>Цена</legend>
                 <label for="pricechoice" class="visually-hidden">Цена:</label>
                 100<input type="range" min="100" max="500" step="100" id="pricechoice"
                   name="pricechoice">500
           </fieldset>
-          <fieldset>
+          <fieldset class="choise-precent-fat">
             <legend>Жирность:</legend>
             <ul>
               <li>
@@ -163,7 +163,7 @@
               </li>
             </ul>
           </fieldset>
-          <fieldset>
+          <fieldset class="additives">
             <legend>Наполнители:</legend>
             <ul>
               <li>
