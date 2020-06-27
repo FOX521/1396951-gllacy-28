@@ -78,7 +78,7 @@
                 </form>
               </div>
               </div>
-      <a href="#" class="link-busket">Пусто</a>
+      <a href="#" class="link-busket link-full-buscket"><span>2 Товара</span></a>
     </div>
       <div class="table-basket">
         <table>
@@ -119,17 +119,17 @@
           <a href="">Каталог</a>
         </li>
         <li>
-          Сливочное мороженное
+          Сливочное
         </li>
       </ul>
-      <h1 class="title-current-page">Сливочное мороженное</h1>
+      <h1 class="title-current-page">Сливочное мороженое</h1>
       <section class="filter">
         <h2 class="visually-hidden">Фильтр товаров</h2>
         <form class="form-filter" action="https://echo.htmlacademy.ru" method="get">
           <fieldset class="popular-pattern">
-            <legend>Сортировка:</legend>
+            <legend class="sort-legend">Сортировка:</legend>
                 <label for="select" class="visually-hidden">Сортировка</label>
-                  <select id="select" name="sort">
+                  <select class="popular-pattern-input" id="select" name="sort">
                     <option value="most-popular">по популярности</option>
                     <option value="cheap">сначала недорогие</option>
                     <option value="expensive">сначала дорогие</option>
@@ -137,54 +137,63 @@
                   </select>
           </fieldset>
           <fieldset class="price">
-            <legend>Цена</legend>
-                <label for="pricechoice" class="visually-hidden">Цена:</label>
-                100<input type="range" min="100" max="500" step="100" id="pricechoice"
-                  name="pricechoice">500
+            <legend class="cost-legend">Цена</legend>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="
+                      width: 30%;
+                      margin-left: 20%;
+                      "></div>
+                    </div>
+                  <div class="toggle toggle-min" tabindex="0" style="left:20%;"></div>
+                  <div class="toggle toggle-max" tabindex="0" style="left:50%;"></div>
+                  </div>
+                  </div>
           </fieldset>
           <fieldset class="choise-precent-fat">
-            <legend>Жирность:</legend>
-            <ul>
-              <li>
+            <legend class="fat-legend">Жирность:</legend>
+            <ul class="list-fat">
+              <li class="list-fat-element">
                 <input type="radio" name="fat-prec" id="zero-prec" value="0" >
                 <label for="zero-prec">0%</label>
               </li>
-              <li>
+              <li class="list-fat-element">
                 <input type="radio" name="fat-prec" id="ten-prec" value="10"   checked>
                 <label for="ten-prec" >10%</label>
               </li>
-              <li>
+              <li class="list-fat-element">
                 <input type="radio" name="fat-prec" id="thirty-prec" value="30" >
                 <label for="thirty-prec" >30%</label>
               </li>
-              <li>
+              <li class="list-fat-element">
                 <input type="radio" name="fat-prec" id="more-thirty-prec" value="31" >
                 <label for="more-thirty-prec" >Выше 30%</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="additives">
-            <legend>Наполнители:</legend>
-            <ul>
-              <li>
+            <legend class="additives-legend">Наполнители:</legend>
+            <ul class="list-filler">
+              <li class="list-filler-element">
                 <input  type="checkbox" name="choclate" id="choclate" checked>
-                <label for="choclate">Шоколадные</label>
+                <label for="choclate">шоколадные</label>
               </li>
-              <li>
+              <li class="list-filler-element">
                 <input type="checkbox" name="sugar-sand" id="sugar-sand" checked>
-                <label for="sugar-sand">Сахарные присыпки</label>
+                <label for="sugar-sand">сахарные присыпки</label>
               </li>
-              <li>
+              <li class="list-filler-element">
                 <input type="checkbox" name="fruits" id="fruits">
-                <label for="fruits">Фрукты</label>
+                <label for="fruits">фрукты</label>
               </li>
-              <li>
+              <li class="list-filler-element">
                 <input type="checkbox" name="siroup" id="siroup">
-                <label for="siroup">Сиропы</label>
+                <label for="siroup">сиропы</label>
               </li>
-              <li>
+              <li class="list-filler-element">
                 <input  type="checkbox" name="jam" id="jam">
-                <label for="jam">Джемы</label>
+                <label for="jam">джемы</label>
               </li>
             </ul>
           </fieldset>
@@ -201,9 +210,11 @@
             <img src="img/photo1.jpg" width="150" height="150" alt="Апельсиновое морожженое с джемом" >
             </a>
             <p class="cut">
-              310 ₽/кг
+              310 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -213,9 +224,11 @@
             <img src="img/photo2.jpg" width="150" height="150" alt="Мороженное сливочное с  кусочками шоколада" >
             </a>
             <p class="cut">
-              380 ₽/кг
+              380 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -225,9 +238,11 @@
             <img src="img/photo3.jpg"  width="150" height="150" alt="Присыпка из белого шоколада и сливочное мороженное с клубникой">
             </a>
             <p class="cut">
-              355 ₽/кг
+              355 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type='button' class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -237,9 +252,11 @@
             <img src="img/photo4.jpg"  width="150" height="150" alt="Карамельная подливка и крем брюле">
             </a>
             <p class="cut">
-              415 ₽/кг
+              415 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -249,9 +266,11 @@
             <img src="img/photo5.jpg"  width="150" height="150" alt="Сливочное с брусничным джемом">
             </a>
             <p class="cut">
-              325 ₽/кг
+              325 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -261,9 +280,11 @@
             <img src="img/photo6.jpg"  width="150" height="150" alt="Ягоды черники с мороженным">
             </a>
             <p class="cut">
-              410 ₽/кг
+              410 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -273,9 +294,11 @@
             <img src="img/photo7.jpg"  width="150" height="150" alt="Карамельная присипка с лимонным мороженным">
             </a>
             <p class="cut">
-              315 ₽/кг
+              315 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -285,9 +308,11 @@
             <img src="img/photo8.jpg"  width="150" height="150" alt="Шоколадная стружка и сливочное мороженное">
             </a>
             <p class="cut">
-              320 ₽/кг
+              320 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -297,9 +322,11 @@
             <img src="img/photo9.jpg"  width="150" height="150" alt="Кусочки шоколада с ванильным мороженным">
             </a>
             <p class="cut">
-              440 ₽/кг
+              440 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -309,9 +336,11 @@
             <img src="img/photo10.jpg"  width="150" height="150" alt="Мороженное сливочное с ментоловым сиропом">
             </a>
             <p class="cut">
-              435 ₽/кг
+              435 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -321,9 +350,11 @@
             <img src="img/photo11.jpg"  width="150" height="150" alt="Кусочки черного шоколада и сливочное мороженное">
             </a>
             <p class="cut">
-              355 ₽/кг
+              355 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
           <li class="order-list-element">
             <a class="link-order-title" href="#">
@@ -333,70 +364,78 @@
             <img src="img/photo12.jpg"  width="150" height="150" alt="Мятный сироп с сливочным мороженным">
             </a>
             <p class="cut">
-              420 ₽/кг
+              420 ₽<span class="weight-style">/кг</span>
             </p>
+            <div class="wrapper-fast-view">
             <button type="button" class="button fast-view">Быстрый просмотр</button>
+            </div>
           </li>
         </ul>
         <ul class="navigation-page">
-          <li>
-            <a href="#">1</a>
+          <li class="navigation-page-element-1">
+            <a class="link-navigation-back" href="#">Назад</a>
           </li>
-          <li>
-            <a href="#">2</a>
+          <li class="navigation-page-element-2">
+            <a class="link-navigation-page" href="#">1</a>
           </li>
-          <li>
-            <a href="#">3</a>
+          <li class="navigation-page-element-3">
+            <a class="link-navigation-page" href="#">2</a>
           </li>
-          <li>
-            <a href="#">4</a>
+          <li class="navigation-page-element-4">
+            <a class="link-navigation-page" href="#">3</a>
           </li>
-          <li>
-            <a href="#">5</a>
+          <li class="navigation-page-element-5">
+            <a class="link-navigation-page" href="#">4</a>
+          </li>
+          <li class="navigation-page-element-6">
+            <a class="link-navigation-page" href="#">5</a>
+          </li>
+          <li class="navigation-page-element-7">
+            <a class="link-navigation-next" href="#">Вперед</a>
           </li>
         </ul>
       </section>
     </main>
     <footer class="main-footer container">
-        <ul class="social-list">
-          <li>
-            <a href="#" class="fb-icon"><span class="visually-hidden">Фейсбук</span></a>
-          </li>
-          <li>
-            <a href="#" class="vk-icon"><span class="visually-hidden">ВК</span></a>
-          </li>
-          <li>
-            <a href="#" class="inst-icon"><span class="visually-hidden">Инстаграм</span></a>
-          </li>
-          <li>
-            <a href="#" class="twit-icon"><span class="visually-hidden">Твитер</span></a>
-          </li>
-        </ul>
-        <ul class="info-list">
-          <li class="flex-info-list-1">
-            <h2>Для поставщиков</h2>
-          </li>
-          <li class="flex-info-list-2">
-            <a href="#">О производстве</a>
-          </li>
-          <li class="flex-info-list-3">
-            <a href="#">Наши документы</a>
-          </li>
-          <li class="flex-info-list-4">
-            <a href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-      <section class="copyright">
-        <h2 class="visually-hidden">Копирайт</h2>
-      <p>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="100" height="100" alt="Логотип академии">
-        </a>
-      </p>
-      <p class="logo">
-        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
-      </p>
+      <ul class="social-list">
+        <li>
+          <a href="#" class="fb-icon"><span class="visually-hidden">Фейсбук</span></a>
+        </li>
+        <li>
+          <a href="#" class="vk-icon"><span class="visually-hidden">ВК</span></a>
+        </li>
+        <li>
+          <a href="#" class="inst-icon"><span class="visually-hidden">Инстаграм</span></a>
+        </li>
+        <li>
+          <a href="#" class="twit-icon"><span class="visually-hidden">Твитер</span></a>
+        </li>
+      </ul>
+      <ul class="info-list">
+        <li class="flex-info-list-1">
+          <h2>Для поставщиков</h2>
+        </li>
+        <li class="flex-info-list-2">
+          <a href="#">О производстве</a>
+        </li>
+        <li class="flex-info-list-3">
+          <a href="#">Наши документы</a>
+        </li>
+        <li class="flex-info-list-4">
+          <a href="#">Экологические стандарты</a>
+        </li>
+      </ul>
+    <section class="copyright">
+      <h2 class="visually-hidden">Копирайт</h2>
+    <p class="copyright-logo">
+      <a href="https://htmlacademy.ru/intensive/htmlcss">
+      <img src="img/logo-htmlacademy.svg" width="108px" height="39px" alt="Логотип компании">
+      </a>
+    </p>
+    <p class="link-copyright-logo">
+      Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+    </p>
     </section>
-    </footer>
+  </footer>
   </body>
 </html>
