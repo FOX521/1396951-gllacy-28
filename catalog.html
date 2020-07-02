@@ -6,7 +6,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="css/normalize.css">
     <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
+    </head>
   <body class="page-body">
     <header class="main-header container">
       <a class="link-header-main-logo" href="index.html">
@@ -16,7 +16,7 @@
         <ul class="site-navigation">
           <li>
             <div class="catalog-wrapper">
-            <a class="link-katalog" href="catalog.html">Каталог</a>
+            <a class="link-katalog link-visited-katalog" href="catalog.html">Каталог</a>
             <ul class="sub-menu">
               <li>
               	<a class="link-new" href="">Новинки</a>
@@ -78,29 +78,32 @@
                 </form>
               </div>
               </div>
+      <div class="block-link-busket">
       <a href="#" class="link-busket link-full-buscket"><span>2 Товара</span></a>
-    </div>
       <div class="table-basket">
-        <table>
+        <table class="main-table">
           <tr>
-            <td><button type="button" class="button">Удалить</button></td>
-            <td><img src="img/photo1.jpg" width="20" height="20" alt="Цитрусовое мороженное"></td>
+            <td><button type="button" class="button delete-item"></button></td>
+            <td><img src="img/photo1.jpg" alt="Цитрусовое мороженное"></td>
             <td>Пломбир с апельсиновым джемом</td>
             <td>1,5 кг х 200 руб.</td>
             <td>300 руб.</td>
           </tr>
           <tr>
-            <td><button type="button" class="button">Удалить</button></td>
-            <td><img src="img/photo3.jpg" width="20" height="20" alt="Клубничное мороженное"></td>
+            <td><button type="button" class="button delete-item"></button></td>
+            <td><img src="img/photo3.jpg" alt="Клубничное мороженное"></td>
             <td>Клубничный пломбир с присыпкой из белого шоколада</td>
             <td>1,5 кг х 300 руб.</td>
             <td>450 руб.</td>
           </tr>
-          <tr>
-            <td colspan="5">Итого:750 руб.</td>
-          </tr>
         </table>
-        <a href="#" class="button">Оформить заказ</a>
+        <p class="summ-shop">
+          Итого: 750 руб
+        </p>
+        <div  class="line-drop"></div>
+        <a href="#" class="button button-for-table">Оформить заказ</a>
+      </div>
+      </div>
       </div>
       <section class="time-working">
         <h2 class="visually-hidden">Время работы</h2>
@@ -437,5 +440,6 @@
     </p>
     </section>
   </footer>
+  <script src="js/form-login.js"></script>
   </body>
 </html>
