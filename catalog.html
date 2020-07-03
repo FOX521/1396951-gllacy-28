@@ -82,19 +82,19 @@
       <a href="#" class="link-busket link-full-buscket"><span>2 Товара</span></a>
       <div class="table-basket">
         <table class="main-table">
-          <tr>
-            <td><button type="button" class="button delete-item"></button></td>
-            <td><img src="img/photo1.jpg" alt="Цитрусовое мороженное"></td>
-            <td>Пломбир с апельсиновым джемом</td>
-            <td>1,5 кг х 200 руб.</td>
-            <td>300 руб.</td>
+          <tr class="table-rows">
+            <td class="table-column-1"><button type="button" class="button delete-item"></button></td>
+            <td class="table-column-2"><img src="img/photo1.jpg" alt="Цитрусовое мороженное"></td>
+            <td class="table-column-3">Пломбир с апельсиновым джемом</td>
+            <td class="table-column-4">1,5 кг х 200 руб.</td>
+            <td class="table-column-5">300 руб.</td>
           </tr>
-          <tr>
-            <td><button type="button" class="button delete-item"></button></td>
-            <td><img src="img/photo3.jpg" alt="Клубничное мороженное"></td>
-            <td>Клубничный пломбир с присыпкой из белого шоколада</td>
-            <td>1,5 кг х 300 руб.</td>
-            <td>450 руб.</td>
+          <tr class="table-rows">
+            <td class="table-column-1"><button type="button" class="button delete-item"></button></td>
+            <td class="table-column-2"><img src="img/photo3.jpg" alt="Клубничное мороженное"></td>
+            <td class="table-column-3">Клубничный пломбир с присыпкой из белого шоколада</td>
+            <td class="table-column-4">1,5 кг х 300 руб.</td>
+            <td class="table-column-5">450 руб.</td>
           </tr>
         </table>
         <p class="summ-shop">
@@ -140,7 +140,7 @@
                   </select>
           </fieldset>
           <fieldset class="price">
-            <legend class="cost-legend">Цена</legend>
+            <legend class="cost-legend">Цена: 100 ₽ – 500 ₽</legend>
                 <div class="range-filter">
                   <div class="range-controls">
                     <div class="scale">
@@ -158,45 +158,54 @@
             <legend class="fat-legend">Жирность:</legend>
             <ul class="list-fat">
               <li class="list-fat-element">
-                <input type="radio" name="fat-prec" id="zero-prec" value="0" >
-                <label for="zero-prec">0%</label>
+                <input class="check-input" type="radio" name="fat-prec" id="zero-prec" value="0" >
+                <span class="radiobutton"></span>
+                <label class="radio-label" for="zero-prec">0%</label>
               </li>
               <li class="list-fat-element">
-                <input type="radio" name="fat-prec" id="ten-prec" value="10"   checked>
-                <label for="ten-prec" >10%</label>
+                <input class="check-input" type="radio" name="fat-prec" id="ten-prec" value="10"  checked>
+                <span class="radiobutton-on"></span>
+                <label class="radio-label" for="ten-prec" >до 10%</label>
               </li>
               <li class="list-fat-element">
-                <input type="radio" name="fat-prec" id="thirty-prec" value="30" >
-                <label for="thirty-prec" >30%</label>
+                <input class="check-input" type="radio" name="fat-prec" id="thirty-prec" value="30" >
+                <span class="radiobutton"></span>
+                <label class="radio-label" for="thirty-prec" >до 30%</label>
               </li>
               <li class="list-fat-element">
-                <input type="radio" name="fat-prec" id="more-thirty-prec" value="31" >
-                <label for="more-thirty-prec" >Выше 30%</label>
+                <input class="check-input" type="radio" name="fat-prec" id="more-thirty-prec" value="31" >
+                <span class="radiobutton"></span>
+                <label class="radio-label" for="more-thirty-prec" >Выше 30%</label>
               </li>
             </ul>
           </fieldset>
           <fieldset class="additives">
             <legend class="additives-legend">Наполнители:</legend>
             <ul class="list-filler">
-              <li class="list-filler-element">
-                <input  type="checkbox" name="choclate" id="choclate" checked>
-                <label for="choclate">шоколадные</label>
+              <li class="list-filler-element-1">
+                <input class="check-input" type="checkbox" name="choclate" id="choclate" checked>
+                <span class="check-box-on"></span>
+                <label class="check" for="choclate">шоколадные</label>
               </li>
-              <li class="list-filler-element">
-                <input type="checkbox" name="sugar-sand" id="sugar-sand" checked>
-                <label for="sugar-sand">сахарные присыпки</label>
+              <li class="list-filler-element-2">
+                <input class="check-input" type="checkbox" name="sugar-sand" id="sugar-sand" checked>
+                <span class="check-box-on"></span>
+                <label class="check" for="sugar-sand">сахарные присыпки</label>
               </li>
-              <li class="list-filler-element">
-                <input type="checkbox" name="fruits" id="fruits">
-                <label for="fruits">фрукты</label>
+              <li class="list-filler-element-3">
+                <input class="check-input" type="checkbox" name="fruits" id="fruits">
+                <span class="check-box-off"></span>
+                <label class="check" for="fruits">фрукты</label>
               </li>
-              <li class="list-filler-element">
-                <input type="checkbox" name="siroup" id="siroup">
-                <label for="siroup">сиропы</label>
+              <li class="list-filler-element-4">
+                <input class="check-input" type="checkbox" name="siroup" id="siroup">
+                <span class="check-box-off"></span>
+                <label class="check" for="siroup">сиропы</label>
               </li>
-              <li class="list-filler-element">
-                <input  type="checkbox" name="jam" id="jam">
-                <label for="jam">джемы</label>
+              <li class="list-filler-element-5">
+                <input class="check-input"  type="checkbox" name="jam" id="jam">
+                <span class="check-box-off"></span>
+                <label class="check" for="jam">джемы</label>
               </li>
             </ul>
           </fieldset>

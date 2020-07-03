@@ -205,6 +205,12 @@ a{
 	padding-top:10px;
 }
 
+.log-pharagraph {
+  margin: 0;
+  margin-top: 9px;
+  margin-bottom: 19px;
+}
+
 .form-login input {
 	width: 241px;
   height: 44px;
@@ -236,11 +242,22 @@ a{
 }
 
 .link-login-wrapper button {
-  margin-top: 10px;
+  margin-top: 6px;
+  margin-left: 7px;
 }
 
 .block-new-reg {
   text-align: start;
+}
+
+.new-reg {
+  margin: 0px;
+  margin-top: 5px;
+}
+
+.forget-password {
+  margin: 0;
+  margin-top: 8px;
 }
 
 .block-new-reg a {
@@ -260,8 +277,8 @@ a{
 
 .search-block {
 	position: absolute;
-	top:40px;
-  right:0px;
+	top:36px;
+  right:2px;
   width: 341px;
 	height: 84px;
   background: var(--basic-milk);
@@ -488,7 +505,8 @@ a{
 
 .site-wrapper-1 {
 	background-color: #849d8f;
-	background-image: url('../img/image-slader1.png');
+  background-image: url('../img/image-slader1.png');
+
 }
 
 .site-wrapper-2 {
@@ -974,11 +992,42 @@ a{
 
 .main-table {
   position: relative;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 16px;
 }
+
+.main-table .table-column-1 {
+  width: 32px;
+}
+
+.main-table .table-column-2 {
+  width: 38px;
+  padding-top: 16px;
+}
+
+.main-table .table-column-3 {
+  width: 233px;
+  text-align: start;
+  padding-top: 14px;
+}
+
+.main-table .table-column-4 {
+  width: 130px;
+  padding-top: 14px;
+}
+
+.main-table .table-column-5 {
+  width: 72px;
+ padding-top: 14px;
+}
+
+
 
 .main-table .delete-item::before {
   position: absolute;
   content: "";
+  margin-top:-4px;
 
   width: 10px;
   height: 10px;
@@ -1013,8 +1062,8 @@ a{
 
 .button-for-table{
   position: absolute;
-  bottom: 21px;
-  right: 14px;
+  bottom: 24px;
+  right: 16px;
   width: 172px;
   height: 44px;
 
@@ -1026,6 +1075,7 @@ a{
 
 
 .bread-crumbs {
+  position: relative;
 	list-style: none;
   display: flex;
   padding: 0;
@@ -1033,8 +1083,19 @@ a{
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
-  margin-top: 18px;
+  margin-top: 21px;
   margin-bottom: 3px;
+}
+
+.bread-crumbs li:not(:last-child)::after{
+  position: absolute;
+  content: "";
+  top: 4px;
+  margin-left: -13px;
+  width: 6px;
+  height: 6px;
+  background-image: url("../img/arrow-right.svg");
+  background-repeat: no-repeat;
 }
 
 .bread-crumbs a {
@@ -1209,6 +1270,7 @@ a{
 }
 
 .list-fat {
+  position: relative;
   width: 425px;
   height:36px;
   margin: 0px;
@@ -1219,12 +1281,36 @@ a{
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.radiobutton {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/radio-off.svg");
+  background-repeat: no-repeat;
+  top: 6px;
+}
+
+.radiobutton-on {
+  position: absolute;
+  width: 27px;
+  height: 27px;
+  background-image: url("../img/radio-on.svg");
+  background-repeat: no-repeat;
+  top: 6px;
+}
+
+.radio-label {
+  padding-left: 31px;
+}
+
+
 .list-fat-element {
   margin-left: 14px;
  margin-top: 7px;
 }
 
 .list-filler {
+  position: relative;
   margin: 0px;
   padding: 0px;
   margin-top: 9px;
@@ -1238,8 +1324,42 @@ a{
   background-color:  rgba(255, 255, 255, 0.2);
 }
 
-.list-filler-element {
-  margin-right: 27px;
+.list-filler li {
+  margin-right: 22px;
+}
+
+.list-filler-element-4{
+  margin-left:5px;
+}
+
+.check{
+  padding-left: 31px;
+}
+
+.check-input {
+  position: absolute;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.check-box-on {
+  position:absolute;
+  top: 6px;
+  width: 27px;
+  height: 22px;
+  background-image: url("../img/checkbox-on.svg");
+  background-repeat: no-repeat;
+  margin-left: -2;
+}
+
+.check-box-off {
+  position: absolute;
+  top: 6px;
+  width: 27px;
+  height: 22px;
+  background-image: url("../img/checkbox-off.svg");
+  background-repeat: no-repeat;
 }
 
 .button-filter {
@@ -1534,7 +1654,7 @@ a{
 	align-items: flex-end;
   flex-grow: 1;
   position: absolute;
-  top: 59px;
+  top: 62px;
   right: 26px;
 }
 
@@ -1555,7 +1675,7 @@ a{
   list-style: none;
 	padding: 0;
   margin-left: 19px;
-  margin-top: 29px;
+  margin-top: 26px;
 	width: 167px;
 	height: 33px;
 	font-size: 13px;
@@ -1566,7 +1686,8 @@ a{
 
 .info-list {
   position: relative;
-	padding: 0px;
+  padding: 0px;
+  margin-top: 13px;
 	width:360px;
   display: flex;
 	flex-wrap: wrap;
