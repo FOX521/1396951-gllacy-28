@@ -14,9 +14,9 @@ try {
   isStorageSupport = false;
 }
 
-linklogin.addEventListener("click", function (evt) {
+linklogin.addEventListener("mouseover", function (evt) {
   evt.preventDefault();
-  modalform.classList.add("modal-show");
+  modalform.classList.toggle("modal-show");
   if (storage) {
     login.value = storage;
     password.focus();
@@ -34,7 +34,7 @@ form.addEventListener("submit", function (evt) {
   }
   else {
     if (isStorageSupport) {
-    localStorage.setItem("login", login.value)
+    localStorage.setItem("login", login.value);
     }
   }
 });
