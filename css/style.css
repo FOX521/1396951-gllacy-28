@@ -1214,7 +1214,8 @@ a{
   padding-top: 1px;
   border-radius: 20px;
   background-color:  rgba(255, 255, 255, 0.2);
-}
+  border: none;
+  }
 
 .range-filter {
   margin: 0px;
@@ -1588,6 +1589,14 @@ a{
   vertical-align: middle;
   line-height: 26px;
   color: var(--basic-white);
+}
+
+.link-navigation-page:hover,
+.link-navigation-next:hover
+{
+  color: var(--basic-black);
+  border-radius: 50%;
+  background-color: var(--basic-white);
 }
 
 .link-navigation-next{
