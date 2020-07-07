@@ -16,7 +16,6 @@ try {
 
 linklogin.addEventListener("mouseover", function (evt) {
   evt.preventDefault();
-  modalform.classList.toggle("modal-show");
   if (storage) {
     login.value = storage;
     password.focus();
@@ -41,11 +40,9 @@ form.addEventListener("submit", function (evt) {
 
 window.addEventListener("keydown", function (evt) {
   if (evt.keyCode === 27) {
-    if (modalform.classList.contains("modal-show")) {
       evt.preventDefault();
       modalform.classList.remove("modal-show");
       modalform.classList.remove("modal-error");
-    }
   }
 });
 

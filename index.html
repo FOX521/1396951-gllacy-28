@@ -1,347 +1,349 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Глейси</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/normalize.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-  </head>
-  <body class="page-body">
-    <div class="site-wrapper site-wrapper-1 ">
-    <header class="main-header container">
-    	<a class="link-header-main-logo">
-        <img class="main-header-logo" src="img/logo.svg" alt="Логотип Glacy Shop">
-        </a>
-      <nav class="main-navigation">
-        <ul class="site-navigation">
-          <li>
-            <div class="catalog-wrapper">
-            <a class="link-katalog" href="catalog.html">Каталог</a>
-            <ul class="sub-menu">
-              <li>
-              	<a class="link-new" href="">Новинки</a>
-              </li>
-              <li>
-              	<a class="link-cream" href="">Сливочное</a>
-              </li>
-              <li>
-              	<a class="link-sherbet" href="">Щербеты</a>
-              </li>
-              <li>
-              	<a class="link-fruit-ice" href="">Фруктовый лед</a>
-              </li>
-              <li>
-              	<a class="link-melorin" href="">Мелорин</a>
-              </li>
-            </ul>
+   <head>
+      <meta charset="utf-8">
+      <title>HTML Academy: Глейси</title>
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" type="text/css" href="css/normalize.css">
+      <link rel="stylesheet" type="text/css" href="css/style.css">
+   </head>
+   <body class="page-body">
+      <div class="site-wrapper site-wrapper-1 ">
+         <header class="main-header container">
+            <a class="link-header-main-logo">
+            <img class="main-header-logo" src="img/logo.svg" width="154" height="64" alt="Логотип Glacy Shop">
+            </a>
+            <nav class="main-navigation">
+               <ul class="site-navigation">
+                  <li>
+                     <div class="catalog-wrapper">
+                        <a class="link-katalog" href="catalog.html">Каталог</a>
+                        <ul class="sub-menu">
+                           <li>
+                              <a class="link-new" href="">Новинки</a>
+                              <div class="line-bottom"></div>
+                           </li>
+                           <li>
+                              <a class="link-cream" href="">Сливочное</a>
+                           </li>
+                           <li>
+                              <a class="link-sherbet" href="">Щербеты</a>
+                           </li>
+                           <li>
+                              <a class="link-fruit-ice" href="">Фруктовый лед</a>
+                           </li>
+                           <li>
+                              <a class="link-melorin" href="">Мелорин</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </li>
+                  <li>
+                     <a class="link-send" href="#">Доставка и оплата</a>
+                  </li>
+                  <li>
+                     <a class="link-info" href="#">О компании</a>
+                  </li>
+               </ul>
+            </nav>
+            <div class="private-office">
+               <div class="wrapper-search">
+                  <a href="#" class="link-search"><span class="visually-hidden">Поиск</span></a>
+                  <div class="search-block">
+                     <label  for="search" class="visually-hidden">Поиск</label>
+                     <input type="search" id="search" class="search-input" name="search" placeholder="Крем-брюле">
+                  </div>
+               </div>
+               <div class="entry-link-wrapper">
+                  <a class="link-login" href="#"><span>Вход</span></a>
+                  <div class="modal-search">
+                     <form class="form-login" action="https://echo.htmlacademy.ru">
+                        <p class="log-paragraph">
+                           <label for="login-e-mail" class="visually-hidden">Логин</label>
+                           <input type="email" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">
+                        </p>
+                        <p>
+                           <label for="login-password" class="visually-hidden">Пароль</label>
+                           <input type="password" id="login-password" name="login-password" placeholder="Пароль">
+                        </p>
+                        <div class="link-login-wrapper">
+                           <button type="submit">Войти</button>
+                           <div class="block-new-reg">
+                              <p class="forget-password">
+                                 <a class="link-forget-password" href="#">Забыли пароль?</a>
+                              </p>
+                              <p class="new-reg">
+                                 <a class="link-new-reg" href="#">Новая регистрация</a>
+                              </p>
+                           </div>
+                        </div>
+                     </form>
+                  </div>
+               </div>
+               <a href="#" class="link-busket"><span>Пусто</span></a>
             </div>
-          </li>
-          <li>
-            <a class="link-send" href="#">Доставка и оплата</a>
-          </li>
-          <li>
-            <a class="link-info" href="#">О компании</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="private-office">
-        <div class="wrapper-search">
-      <a href="#" class="link-search"><span class="visually-hidden">Поиск</span></a>
-      <div class="search-block">
-      	<label  for="search" class="visually-hidden">Поиск</label>
-          <input type="search" id="search" class="search-input" name="search" placeholder="Крем-брюле">
+            <section class="time-working">
+               <h2 class="visually-hidden">Время работы</h2>
+               <p>
+                  с 10 до 20, ежедневно
+               </p>
+               <a href="tel:88124502525">8 812 450-25-25</a>
+            </section>
+         </header>
+         <main class="container">
+            <h1 class="visually-hidden">Интернет магазин мороженного</h1>
+            <section class="slider">
+               <ul class="slider-list">
+                  <li class="slider-item slide  slide-current">
+                     <h2 class="slide-title">
+                        Крем-брюле и пломбир с малиновым джемом
+                     </h2>
+                     <a href="#" class="button slide-button">Давайте оба!</a>
+                  </li>
+                  <li class="slider-item slide">
+                     <h2 class="slide-title">
+                        Шоколадный пломбир и лимонный сорбет
+                     </h2>
+                     <a href="#" class="button slide-button">Давайте оба!</a>
+                  </li>
+                  <li class="slider-item slide">
+                     <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
+                     <a href="#" class="button slide-button">Давайте оба!</a>
+                  </li>
+               </ul>
+               <div class="slider-controls">
+                  <button type="button" class="current" aria-label="Первый слайд"></button>
+                  <button type="button"  aria-label="Второй слайд"></button>
+                  <button type="button" aria-label="Третий слайд"></button>
+               </div>
+            </section>
+            <section class="offers">
+               <h2 class="visually-hidden">Предложения</h2>
+               <article class="offers-item offers-item-rassbery">
+                  <h2>Малинка даром!</h2>
+                  <p>
+                     При покупке 2 кг любого фруктового мороженого, добавим <br/> в ваш заказ банку маринового варенья бесплатно.
+                  </p>
+                  <a href="#" class="button button-offer-rassbery">Хочу варенье!</a>
+               </article>
+               <article class="offers-item offers-item-choclate">
+                  <h2>Шоколадки даром!</h2>
+                  <p>
+                     При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
+                  </p>
+                  <a href="#" class="button button-offer-choclate">Хочу шоколадки!</a>
+               </article>
+            </section>
+            <section class="popular">
+               <ul class="order-list">
+                  <li class="order-list-element">
+                     <a class="link-order-title" href="#">
+                        <h3>
+                           Сливочное с апельсиновым джемом и цитрусовой стружкой
+                        </h3>
+                     </a>
+                     <a class="link-order-img" href="#">
+                     <img src="img/photo1.jpg" width="150" height="150" alt="Апельсиновое морожженое с джемом" >
+                     </a>
+                     <p class="cut">
+                        310 ₽<span class="weight-style" >/кг</span>
+                     </p>
+                     <div class="wrapper-fast-view">
+                        <button type="button" class="button fast-view">Быстрый просмотр</button>
+                     </div>
+                  </li>
+                  <li class="order-list-element">
+                     <a class="link-order-title" href="#">
+                        <h3>
+                           Сливочно-кофейное с кусочками шоколада
+                        </h3>
+                     </a>
+                     <a class="link-order-img" href="#">
+                     <img src="img/photo2.jpg" width="150" height="150" alt="Мороженное сливочное с  кусочками шоколада" >
+                     </a>
+                     <p class="cut">
+                        380 ₽<span class="weight-style" >/кг</span>
+                     </p>
+                     <div class="wrapper-fast-view">
+                        <button type="button" class="button fast-view">Быстрый просмотр</button>
+                     </div>
+                  </li>
+                  <li class="order-list-element">
+                     <a class="link-order-title" href="#">
+                        <h3>
+                           Сливочно-клубничное с присыпкой из белого шоколада
+                        </h3>
+                     </a>
+                     <a class="link-order-img" href="#">
+                     <img src="img/photo3.jpg"  width="150" height="150" alt="Присыпка из белого шоколада и сливочное мороженное с клубникой">
+                     </a>
+                     <p class="cut">
+                        355 ₽<span class="weight-style" >/кг</span>
+                     </p>
+                     <div class="wrapper-fast-view">
+                        <button type="button" class="button fast-view ">Быстрый просмотр</button>
+                     </div>
+                  </li>
+                  <li class="order-list-element">
+                     <a class="link-order-title" href="#">
+                        <h3>
+                           Сливочное крем-брюле с карамельной подливкой
+                        </h3>
+                     </a>
+                     <a class="link-order-img" href="#">
+                     <img src="img/photo4.jpg"  width="150" height="150" alt="Карамельная подливка и крем брюле">
+                     </a>
+                     <p class="cut">
+                        415 ₽<span class="weight-style" >/кг</span>
+                     </p>
+                     <div class="wrapper-fast-view">
+                        <button type="button" class="button fast-view">Быстрый просмотр</button>
+                     </div>
+                  </li>
+               </ul>
+            </section>
+            <section class="describe-shop">
+               <div class="container">
+                  <h1>
+                     Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес.
+                  </h1>
+                  <ul>
+                     <li class="flex-element-1">
+                        Закупка ингредиентов производится только у проверенных
+                        фермерских хозяйств и компаний, с которыми нас связывает
+                        <br> долговременное сотрудничество.
+                     </li>
+                     <li class="flex-element-2">
+                        Для приготовления мороженого используются настоящие
+                        сливки и молоко высочайшего качества. Все дополнительные
+                        ингредиенты и добавки произведены из натурального,
+                        экологически чистого сырья.
+                     </li>
+                     <li class="flex-element-3">
+                        Все наше мороженое изготавливается на собственном
+                        производстве, с использованием современного оборудования
+                        и проверенных временем технологий.
+                     </li>
+                     <li class="flex-element-4">
+                        Доставка нашего мороженного до заказчиков осуществляется
+                        в специальном термопаке, который не дает мороженому
+                        растаять в пути и позволяет сохранить превосходный вкус.
+                     </li>
+                  </ul>
+               </div>
+            </section>
+            <div class="wrapper-blog-describe">
+               <article class="blog">
+                  <p>Новое в нашем блоге</p>
+                  <a href="#">
+                     <h2>
+                        10 способов сервировки<br>
+                        фруктовых щербетов к<br>
+                        столу.
+                     </h2>
+                  </a>
+               </article>
+               <section class="background-send">
+                  <h2 class="visually-hidden">Подписка</h2>
+                  <div class="subscribe">
+                     <form  class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
+                        <p class="offer-subscribe">
+                           Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>
+                           всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
+                           и не слать всякой ненужной ерунды. Честно =)
+                        </p>
+                        <p>
+                           <label for="e-mail" class="visually-hidden">Почта</label>
+                           <input  type="email" class="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com" required>
+                        </p>
+                        <button type="submit" class="button button-send">Отправить</button>
+                     </form>
+                  </div>
+               </section>
+            </div>
+            <section class="contacts">
+               <h2 class="visually-hidden">Контакты</h2>
+               <!-- <img src="img/map.jpg" alt="ул. Большая Конюшенная, 19/8, Санкт-Петербург">-->
+               <iframe src="https://yandex.ru/map-widget/v1/-/CKaqv4yt" width="1199" height="430"  style="position:relative;"></iframe>
+               <section class="info-work">
+                  <h3>Адрес главного офиса<br>
+                     и офлайн-магазина:
+                  </h3>
+                  <address>
+                     ул. Большая Конюшенная,<br>
+                     19/8, Санкт-Петербург
+                  </address>
+                  <p class="order-phone">Для заказов по телефону:</p>
+                  <a href="tel:88124502525">8 812 450-25-25</a>
+                  <p class="time">(с 10 до 20 ежедневно)</p>
+                  <a href="" class="button button-feedback">Форма обратной связи</a>
+               </section>
+            </section>
+         </main>
       </div>
-        </div>
-      <div class="entry-link-wrapper">
-      <a class="link-login" href="#"><span>Вход</span></a>
-      <div class="modal-search">
-        <form class="form-login" action="https://echo.htmlacademy.ru">
-          <p class="log-paragraph">
-            <label for="login-e-mail" class="visually-hidden">Логин</label>
-            <input type="email" id="login-e-mail" name="login-e-mail" placeholder="e-mail@example.ru">
-          </p>
-          <p>
-            <label for="login-password" class="visually-hidden">Пароль</label>
-            <input type="password" id="login-password" name="login-password" placeholder="Пароль">
-          </p>
-          <div class="link-login-wrapper">
-          <button type="submit">Войти</button>
-           <div class="block-new-reg">
-          <p class="forget-password">
-            <a class="link-forget-password" href="#">Забыли пароль?</a>
-          </p>
-          <p class="new-reg">
-            <a class="link-new-reg" href="#">Новая регистрация</a>
-          </p>
-          </div>
-          </div>
-        </form>
+      <footer class="main-footer container">
+         <ul class="social-list">
+            <li>
+               <a href="#" class="fb-icon"><span class="visually-hidden">Фейсбук</span></a>
+            </li>
+            <li>
+               <a href="#" class="vk-icon"><span class="visually-hidden">ВК</span></a>
+            </li>
+            <li>
+               <a href="#" class="inst-icon"><span class="visually-hidden">Инстаграм</span></a>
+            </li>
+            <li>
+               <a href="#" class="twit-icon"><span class="visually-hidden">Твитер</span></a>
+            </li>
+         </ul>
+         <ul class="info-list">
+            <li class="flex-info-list-1">
+               <h2>Для поставщиков</h2>
+            </li>
+            <li class="flex-info-list-2">
+               <a href="#">О производстве</a>
+            </li>
+            <li class="flex-info-list-3">
+               <a href="#">Наши документы</a>
+            </li>
+            <li class="flex-info-list-4">
+               <a href="#">Экологические стандарты</a>
+            </li>
+         </ul>
+         <section class="copyright">
+            <h2 class="visually-hidden">Копирайт</h2>
+            <p class="copyright-logo">
+               <a href="https://htmlacademy.ru/intensive/htmlcss">
+               <img src="img/logo-htmlacademy.svg" width="108" height="39" alt="Логотип компании">
+               </a>
+            </p>
+            <p class="link-copyright-logo">
+               Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
+            </p>
+         </section>
+      </footer>
+      <div class="wrapper-feedback ">
+         <section class="feedback-block">
+            <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
+               <h2>Мы обязательно вам ответим!</h2>
+               <p class="appointment-item">
+                  <label for="cust-name" class="visually-hidden">Имя Фамилия</label>
+                  <input type="text" id="cust-name" name="cust-name" placeholder="Имя Фамилия">
+               </p>
+               <p class="appointment-item">
+                  <label for="feedback" class="visually-hidden">Почта</label>
+                  <input type="email" id="feedback" name="feedback" placeholder="e-mail@example.ru">
+               </p>
+               <p class="form-question">
+                  <label for="question" class="visually-hidden">Вопрос</label>
+                  <textarea id="question" name="question" rows="5" cols="30" placeholder="В свободной форме"></textarea>
+               </p>
+               <button type="submit">Отправить</button>
+            </form>
+            <button type="button" class="close-feedback"><span class="visually-hidden">Закрыть</span></button>
+         </section>
       </div>
-      </div>
-      <a href="#" class="link-busket"><span>Пусто</span></a>
-    </div>
-      <section class="time-working">
-        <h2 class="visually-hidden">Время работы</h2>
-        <p>
-          с 10 до 20, ежедневно
-        </p>
-        <a href="tel:88124502525">8 812 450-25-25</a>
-      </section>
-    </header>
-    <main class="container">
-      <h1 class="visually-hidden">Интернет магазин мороженного</h1>
-      <section class="slider">
-      	<ul class="slider-list">
-      		<li class="slider-item slide  slide-current">
-    		  <h2 class="slide-title">
-    		  	Крем-брюле и пломбир с малиновым джемом
-    		  </h2>
-    		  <a href="#" class="button slide-button">Давайте оба!</a>
-      		</li>
-      		<li class="slider-item slide">
-   			  <h2 class="slide-title">
-   			  Шоколадный пломбир и лимонный сорбет
-   			  </h2>
-      		  <a href="#" class="button slide-button">Давайте оба!</a>
-      		</li>
-      		<li class="slider-item slide">
-    		  <h2 class="slide-title">Пломбир с помадкой и клубничный щербет</h2>
-        	  <a href="#" class="button slide-button">Давайте оба!</a>
-      		</li>
-      	</ul>
-      	<div class="slider-controls">
-      		<button type="button" class="current" aria-label="Первый слайд"></button>
-      		<button type="button"  aria-label="Второй слайд"></button>
-      		<button type="button" aria-label="Третий слайд"></button>
-      	</div>
-      </section>
-      <section class="offers">
-        <h2 class="visually-hidden">Предложения</h2>
-        <article class="offers-item offers-item-rassbery">
-          <h2>Малинка даром!</h2>
-          <p>
-            При покупке 2 кг любого фруктового мороженого, добавим <br/> в ваш заказ банку маринового варенья бесплатно.
-          </p>
-          	<a href="#" class="button button-offer-rassbery">Хочу варенье!</a>
-        </article>
-        <article class="offers-item offers-item-choclate">
-          <h2>Шоколадки даром!</h2>
-          <p>
-            При покупке 2 кг пломбира, добавим в ваш заказ упаковку вкуснейшей шоколадной присыпки совершенно бесплатно.
-          </p>
-            <a href="#" class="button button-offer-choclate">Хочу шоколадки!</a>
-        </article>
-      </section>
-      <section class="popular">
-        <ul class="order-list">
-          <li class="order-list-element">
-            <a class="link-order-title" href="#">
-              <h3>
-                Сливочное с апельсиновым джемом и цитрусовой стружкой
-              </h3>
-            </a>
-            <a class="link-order-img" href="#">
-            <img src="img/photo1.jpg" width="150" height="150" alt="Апельсиновое морожженое с джемом" >
-            </a>
-            <p class="cut">
-              310 ₽<span class="weight-style" >/кг</span>
-            </p>
-            <div class="wrapper-fast-view">
-            <button type="button" class="button fast-view">Быстрый просмотр</button>
-            </div>
-          </li>
-          <li class="order-list-element">
-            <a class="link-order-title" href="#">
-              <h3>
-                Сливочно-кофейное с кусочками шоколада
-              </h3>
-            </a>
-            <a class="link-order-img" href="#">
-            <img src="img/photo2.jpg" width="150" height="150" alt="Мороженное сливочное с  кусочками шоколада" >
-            </a>
-            <p class="cut">
-              380 ₽<span class="weight-style" >/кг</span>
-            </p>
-            <div class="wrapper-fast-view">
-            <button type="button" class="button fast-view">Быстрый просмотр</button>
-            </div>
-          </li>
-          <li class="order-list-element">
-            <a class="link-order-title" href="#">
-              <h3>
-                Сливочно-клубничное с присыпкой из белого шоколада
-              </h3>
-            </a>
-            <a class="link-order-img" href="#">
-            <img src="img/photo3.jpg"  width="150" height="150" alt="Присыпка из белого шоколада и сливочное мороженное с клубникой">
-            </a>
-            <p class="cut">
-              355 ₽<span class="weight-style" >/кг</span>
-            </p>
-            <div class="wrapper-fast-view">
-            <button type="button" class="button fast-view ">Быстрый просмотр</button>
-            </div>
-          </li>
-          <li class="order-list-element">
-            <a class="link-order-title" href="#">
-              <h3>
-                Сливочное крем-брюле с карамельной подливкой
-              </h3>
-            </a>
-            <a class="link-order-img" href="#">
-            <img src="img/photo4.jpg"  width="150" height="150" alt="Карамельная подливка и крем брюле">
-            </a>
-            <p class="cut">
-              415 ₽<span class="weight-style" >/кг</span>
-            </p>
-            <div class="wrapper-fast-view">
-            <button type="button" class="button fast-view">Быстрый просмотр</button>
-            </div>
-          </li>
-        </ul>
-      </section>
-      <section class="describe-shop">
-      	<div class="container">
-        <h1>
-          Магазин Глэйси – это онлайн и офлайн-магазин по продаже мороженого собственного проиводства на развес.
-        </h1>
-        <ul>
-          <li class="flex-element-1">
-            Закупка ингредиентов производится только у проверенных
-            фермерских хозяйств и компаний, с которыми нас связывает
-            <br> долговременное сотрудничество.
-          </li>
-          <li class="flex-element-2">
-            Для приготовления мороженого используются настоящие
-            сливки и молоко высочайшего качества. Все дополнительные
-            ингредиенты и добавки произведены из натурального,
-            экологически чистого сырья.
-          </li>
-          <li class="flex-element-3">
-            Все наше мороженое изготавливается на собственном
-            производстве, с использованием современного оборудования
-            и проверенных временем технологий.
-          </li>
-          <li class="flex-element-4">
-            Доставка нашего мороженного до заказчиков осуществляется
-            в специальном термопаке, который не дает мороженому
-            растаять в пути и позволяет сохранить превосходный вкус.
-          </li>
-        </ul>
-        </div>
-      </section>
-      <div class="wrapper-blog-describe">
-      <article class="blog">
-        <p>Новое в нашем блоге</p>
-        <a href="#">
-          <h2>
-            10 способов сервировки<br>
-            фруктовых щербетов к<br>
-            столу.
-          </h2>
-        </a>
-      </article>
-      <section class="background-send">
-        <h2 class="visually-hidden">Подписка</h2>
-      <div class="subscribe">
-        <form  class="form-subscribe" action="https://echo.htmlacademy.ru" method="post">
-          <p class="offer-subscribe">
-            Подпишитесь на нашу сладкую рассылку и будьте всегда в курсе<br>
-            всего самого вкусного, что у нас происходит. Обещаем не спамить<br>
-            и не слать всякой ненужной ерунды. Честно =)
-          </p>
-          <p>
-            <label for="e-mail" class="visually-hidden">Почта</label>
-            <input  type="email" class="e-mail" name="e-mail" id="e-mail" placeholder="email@example.com" required>
-          </p>
-            <button type="submit" class="button button-send">Отправить</button>
-        </form>
-      </div>
-  	  </section>
-  	</div>
-      <section class="contacts">
-        <h2 class="visually-hidden">Контакты</h2>
-         <!-- <img src="img/map.jpg" alt="ул. Большая Конюшенная, 19/8, Санкт-Петербург">-->
-         <iframe src="https://yandex.ru/map-widget/v1/-/CKaqv4yt" width="1199" height="430" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
-          <section class="info-work">
-           	<h3>Адрес главного офиса<br>
-          	 и офлайн-магазина:</h3>
-          	 <address>
-          	 ул. Большая Конюшенная,<br>
-          	 19/8, Санкт-Петербург
-          	 </address>
-          	 <p class="order-phone">Для заказов по телефону:</p>
-          	 <a href="tel:88124502525">8 812 450-25-25</a>
-             <p class="time">(с 10 до 20 ежедневно)</p>
-          	 <a href="" class="button button-feedback">Форма обратной связи</a>
-          </section>
-      </section>
-    </main>
-  </div>
-    <footer class="main-footer container">
-        <ul class="social-list">
-          <li>
-            <a href="#" class="fb-icon"><span class="visually-hidden">Фейсбук</span></a>
-          </li>
-          <li>
-            <a href="#" class="vk-icon"><span class="visually-hidden">ВК</span></a>
-          </li>
-          <li>
-            <a href="#" class="inst-icon"><span class="visually-hidden">Инстаграм</span></a>
-          </li>
-          <li>
-            <a href="#" class="twit-icon"><span class="visually-hidden">Твитер</span></a>
-          </li>
-        </ul>
-        <ul class="info-list">
-        	<li class="flex-info-list-1">
-        	  <h2>Для поставщиков</h2>
-        	</li>
-          <li class="flex-info-list-2">
-            <a href="#">О производстве</a>
-          </li>
-          <li class="flex-info-list-3">
-            <a href="#">Наши документы</a>
-          </li>
-          <li class="flex-info-list-4">
-            <a href="#">Экологические стандарты</a>
-          </li>
-        </ul>
-      <section class="copyright">
-        <h2 class="visually-hidden">Копирайт</h2>
-      <p class="copyright-logo">
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmlacademy.svg" width="108px" height="39px" alt="Логотип компании">
-        </a>
-      </p>
-      <p class="link-copyright-logo">
-        Сделано в <a href="https://htmlacademy.ru/intensive/htmlcss">HTML Academy</a> © 2019
-      </p>
-      </section>
-    </footer>
-    <div class="wrapper-feedback ">
-    <section class="feedback-block">
-      <form class="appointment-form" action="https://echo.htmlacademy.ru" method="post">
-        <h2>Мы обязательно вам ответим!</h2>
-        <p class="appointment-item">
-          <label for="cust-name" class="visually-hidden">Имя Фамилия</label>
-          <input type="text" id="cust-name" name="cust-name" placeholder="Имя Фамилия">
-        </p>
-        <p class="appointment-item">
-          <label for="feedback" class="visually-hidden">Почта</label>
-          <input type="email" id="feedback" name="feedback" placeholder="e-mail@example.ru">
-        </p>
-        <p class="form-question">
-          <label for="question" class="visually-hidden">Вопрос</label>
-          <textarea id="question" name="question" rows="5" cols="30" placeholder="В свободной форме"></textarea>
-        </p>
-        <button type="submit">Отправить</button>
-      </form>
-      <button type="button" class="close-feedback"><span class="visually-hidden">Закрыть</span></button>
-    </section>
-    </div>
-    <script src="js/form-login.js"></script>
-    <script src="js/popup.js"></script><
-  </body>
+      <script src="js/form-login.js"></script>
+      <script src="js/popup.js"></script>
+   </body>
 </html>
