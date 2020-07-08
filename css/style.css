@@ -64,6 +64,10 @@ a {
 	color: var(--basic-white);
 }
 
+a:hover {
+  color: var(--basic-orange);
+}
+
 iframe {
   border: none;
 }
@@ -119,11 +123,13 @@ iframe {
 }
 
 .catalog-wrapper {
+  height: 43px;
   position: relative;
 }
 
 .catalog-wrapper:hover .sub-menu {
   display: block;
+  z-index: 30;
 }
 
 .sub-menu  {
@@ -369,6 +375,7 @@ iframe {
 .site-navigation .link-send:focus,
 .site-navigation .link-info:hover,
 .site-navigation .link-info:focus {
+  height: 34px;
 	background-color: var(--basic-white);
   border-radius: 26px;
   color: var(--basic-black);
@@ -1239,6 +1246,9 @@ iframe {
   border-radius: 20px;
   color: var(--basic-white);
   background-color:  rgba(255, 255, 255, 0.2);
+  background-image: url("../img/icon-down-dir-white.svg");
+  background-position: 163px 15px;
+  background-repeat: no-repeat;
   border: none;
   cursor: pointer;
   -webkit-appearance: none;
@@ -1246,17 +1256,11 @@ iframe {
   appearance: none;
   }
 
-.sort-legend::after {
-  content: "";
-  position: absolute;
-  top: 61px;
-  right: -75px;
-  width: 11px;
-  height: 11px;
+.popular-pattern-input:hover {
   background-image: url("../img/icon-down-dir.svg");
+  background-position: 163px 15px;
   background-repeat: no-repeat;
 }
-
 
 .popular-pattern-input:hover {
     color: var(--basic-black);
@@ -1488,7 +1492,8 @@ iframe {
   margin-top: 37px;
   margin-left: 14px;
 	width: 144px;
-	height: 36px;
+  height: 36px;
+  color: var(--basic-white);
 	background: var(--basic-background-link);
 	border: 2px solid var(--basic-white);
 	box-sizing: border-box;
@@ -1512,7 +1517,7 @@ iframe {
 .order-list li {
   	position: relative;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: column;
   	width: 261px;
     margin-right: 14px;
     margin-left: 18px;
@@ -1527,6 +1532,7 @@ iframe {
 
 .order-list .link-order-title {
   width: inherit;
+  height: 69px;
   order: 2;
 }
 
