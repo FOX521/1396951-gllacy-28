@@ -7,7 +7,9 @@
 
 /*Variables*/
 :root{
-	--basic-green: #849D8F;
+  --background-basic-green: #849D8F;
+  --background-body-twice: #8996A6;
+  --background-body-three:  #9D8B84;
 	--basic-grey: #8996A6;
 	--basic-pink: #9D8B84;
 	--basic-black: #323232;
@@ -47,7 +49,7 @@ body {
 	line-height: 22px;
 	font-weight: normal;
 	color: var(--basic-white);
-	background-color: var(--basic-green);
+	background-color: var(--background-basic-green);
 	background-image: url();
 	background-position: top center;
 	background-repeat: no-repeat;
@@ -70,6 +72,11 @@ a:hover {
 
 iframe {
   border: none;
+}
+
+input:focus {
+ outline: none;
+ box-shadow: 0 0 0 3px rgba(46, 136, 228, 0.52)
 }
 
 .container {
@@ -1748,6 +1755,15 @@ iframe {
 	grid-template-rows: min-content 1fr min-content;
 	align-content: flex-start;
 }
+
+.background-body-twice {
+  background-color: var(--background-body-twice);
+}
+
+.background-body-three {
+  background-color: var(--background-body-three);
+}
+
 
 .main-header {
     margin:0 auto;
