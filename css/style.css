@@ -110,7 +110,7 @@ input:focus {
 }
 
 .link-header-main-logo {
-  margin-top: 8px;
+  margin-top: 10px;
   margin-left: 16px;
 }
 
@@ -123,20 +123,23 @@ input:focus {
 
 .site-navigation  {
   padding: 0;
-  margin-top: 19px;
+  margin-top: 24px;
 	display: flex;
 	list-style: none;
-	text-decoration: underline;
+  text-decoration: underline;
+  line-height: 13px;
 }
 
 .catalog-wrapper {
   height: 43px;
   position: relative;
+  line-height: 13px;
 }
 
 .catalog-wrapper:hover .sub-menu {
   display: block;
   z-index: 30;
+  line-height: 13px;
 }
 
 .sub-menu  {
@@ -145,13 +148,14 @@ input:focus {
   display:none;
 	list-style: none;
   text-decoration: none;
+  line-height: 13px;
   text-align: start;
   position: absolute;
   z-index: 22;
   background-color: var(--basic-white);
   border-radius: 4px;
   box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.4);
-  top: 40px;
+  top: 38px;
   left: 10px;
 }
 
@@ -248,7 +252,12 @@ input:focus {
 
 .entry-link-wrapper {
   position: relative;
-  margin-top: 21px;
+  margin-top: 22px;
+  margin-right: 12px;
+}
+
+.entry-link-wrapper-catalog {
+  margin-top: 24px;
   margin-right: 10px;
 }
 
@@ -345,6 +354,7 @@ input:focus {
 
 .wrapper-search{
   position: relative;
+  margin-top: 2px;
   margin-right: 10px;
 	border-radius:50%;
 }
@@ -369,7 +379,7 @@ input:focus {
 .site-navigation a,
 .private-office a {
 	display: block;
-	padding-top: 9px;
+	padding-top: 8px;
 	padding-right: 14px;
 	padding-bottom: 11px;
 	padding-left: 14px;
@@ -387,7 +397,7 @@ input:focus {
   border-radius: 26px;
   color: var(--basic-black);
   font-size: 16px;
-  line-height: 18px;
+  line-height: 13px;
   font-weight: bold;
 }
 
@@ -450,11 +460,11 @@ input:focus {
 }
 
 .link-login span{
-  padding-left: 30px;
+  padding-left: 26px;
 }
 
 .link-busket{
-  margin-top: 21px;
+  margin-top: 22px;
   margin-right:16px;
   width: 100px;
   height: 32px;
@@ -469,8 +479,15 @@ input:focus {
 }
 
 .link-full-buscket {
+  margin: 0px;
   width:118px;
+  background-color: var(--basic-white);
 }
+
+.link-full-buscket span {
+color: var(--basic-black);
+}
+
 .link-full-buscket span{
   padding-left: 26px;
   line-height: 16px;
@@ -508,7 +525,7 @@ input:focus {
 .link-login::before {
 	content: "";
 	position: absolute;
-	left: 15px;
+	left: 13px;
   top: 6px;
 
 	width: 20px;
@@ -521,7 +538,7 @@ input:focus {
 .link-busket::before {
 	content: "";
 	position: absolute;
-  left:14px;
+  left:15px;
   top: 7px;
 
 	width: 22px;
@@ -531,17 +548,18 @@ input:focus {
 	opacity: 0.3;
 }
 
+
 .link-full-buscket::before {
 	content: "";
   position: absolute;
   left:14px;
-  top: 7px;
+  top: 5px;
 
 	width: 23px;
   height: 23px;
 	background-image: url("../img/full-busk.svg");
 	background-repeat: no-repeat;
-	opacity: 0.3;
+	opacity: 1;
 }
 
 .link-full-buscket:hover {
@@ -595,7 +613,7 @@ input:focus {
 	padding-top: 321px;
 	text-align: center;
 	color: var(--basic-white);
-	margin-bottom: 40px;
+	margin-bottom: 41px;
 }
 
 .slider-list {
@@ -616,6 +634,7 @@ input:focus {
   position: relative;
   width: 700px;
   margin: 0 auto;
+  margin-top: -7px;
   margin-bottom: 27px;
   font-size: 60px;
   line-height: 60px;
@@ -661,7 +680,7 @@ input:focus {
 
 .slider-controls {
 	position: absolute;
-  bottom: 23px;
+  bottom: 20px;
   left: 14px;
   z-index: 20;
   display: flex;
@@ -873,7 +892,7 @@ input:focus {
 }
 
 .blog h2 {
-	margin-top: 0px;
+	margin-top: 4px;
 	margin-left: 20px;
 	font-style: normal;
 	line-height: 30px;
@@ -906,7 +925,7 @@ input:focus {
 }
 
 .offer-subscribe {
-  margin-top: 20px;
+  margin-top: 24px;
 	margin-left: 15px;
 	color: var(--basic-dyrty-green);
 	font-size: 16px;
@@ -985,8 +1004,9 @@ input:focus {
 }
 
 .info-work  a {
+  display: inline-block;
 	position: relative;
-	margin-top: 0px;
+	margin-top: 3px;
 	margin-left: 23px;
 	font-size: 18px;
 	line-height: 24px;
@@ -1052,8 +1072,8 @@ input:focus {
 
 .table-basket {
   position: absolute;
-  right: 14px;
-  top:60px;
+  right: 4px;
+  top:34px;
 	width: 539px;
   height: 242px;
 
@@ -1067,6 +1087,10 @@ input:focus {
 
 .block-link-busket{
   position: relative;
+  top: 0px;
+  margin-top: 24px;
+  margin-right: 12px;
+  width: 122px;
 }
 
 .block-link-busket:hover .table-basket {
@@ -1081,7 +1105,7 @@ input:focus {
 }
 
 .main-table .table-column-1 {
-  width: 32px;
+  width: 36px;
 }
 
 .main-table .table-column-2 {
@@ -1093,6 +1117,7 @@ input:focus {
   width: 233px;
   text-align: start;
   padding-top: 14px;
+  padding-left: 6px;
 }
 
 .main-table .table-column-4 {
@@ -1103,6 +1128,19 @@ input:focus {
 .main-table .table-column-5 {
   width: 72px;
  padding-top: 14px;
+}
+
+.table-rows-2 .table-column-3 {
+  padding-top: 24px;
+}
+
+.table-rows-2 .table-column-4,
+.table-rows-2 .table-column-5 {
+  padding-top: 8px;
+}
+
+.prise-table {
+  color: var(--basic-grey)
 }
 
 .main-table .delete-item::before {
@@ -1156,7 +1194,7 @@ input:focus {
   position: relative;
   display: flex;
   padding: 0;
-  margin-top: 21px;
+  margin-top: 15px;
   margin-bottom: 3px;
   padding-left: 17px;
 	list-style: none;
@@ -1168,7 +1206,7 @@ input:focus {
 .bread-crumbs li:not(:last-child)::after {
   position: absolute;
   content: "";
-  top: 4px;
+  top: 5px;
   margin-left: -13px;
   width: 6px;
   height: 6px;
@@ -1244,7 +1282,7 @@ input:focus {
 .popular-pattern-input {
   position: relative;
   margin: 0;
-  margin-top: 3px;
+  margin-top: 5px;
   margin-left: 16px;
   width: 196px;
   height: 36px;
@@ -1254,7 +1292,7 @@ input:focus {
   color: var(--basic-white);
   background-color:  rgba(255, 255, 255, 0.2);
   background-image: url("../img/icon-down-dir-white.svg");
-  background-position: 163px 15px;
+  background-position: 172px 15px;
   background-repeat: no-repeat;
   border: none;
   cursor: pointer;
@@ -1265,7 +1303,7 @@ input:focus {
 
 .popular-pattern-input:hover {
   background-image: url("../img/icon-down-dir.svg");
-  background-position: 163px 15px;
+  background-position: 172px 15px;
   background-repeat: no-repeat;
 }
 
@@ -1275,6 +1313,7 @@ input:focus {
 
 .range-filter {
   margin: 0px;
+  margin-top: 5px;
   padding: 0px;
   width:249px;
   padding-left: 16px;
@@ -1378,7 +1417,7 @@ input:focus {
 
 .list-fat-element {
   top: 7px;
-  margin-right: 6px;
+  margin-right: 8px;
   margin-left: 14px;
 }
 
@@ -1517,7 +1556,7 @@ input:focus {
   flex-wrap: wrap;
   padding: 0;
   margin-top: 40px;
-  margin-bottom: 6px;
+  margin-bottom: 3px;
 	list-style: none;
 }
 
@@ -1540,6 +1579,7 @@ input:focus {
 .order-list .link-order-title {
   width: inherit;
   height: 69px;
+  padding-top: 2px;
   order: 2;
 }
 
@@ -1573,7 +1613,7 @@ input:focus {
 .order-list .cut {
   margin: 0;
   position: absolute;
-  left: 2px;
+  left: 0px;
   bottom: 87px;
 	font-family: "Roboto", "Arial", sans-serif;
 	font-style: normal;
@@ -1636,15 +1676,16 @@ input:focus {
   display: flex;
   justify-content: flex-end;
   list-style: none;
-  margin-top: 40px;
-  margin-bottom: 39px;
+  margin-top: 38px;
+  margin-bottom: 33px;
+  padding-right: 7px;
   border: 1px solid transparent;
 }
 
 .navigation-page a {
   padding: 0 10px;
   display: inline-block;
-  min-width:26px;
+  min-width:28px;
   height: 28px;
   background-color: transparent;
   border-radius: 50%;
@@ -1688,8 +1729,9 @@ input:focus {
 .navigation-page .navigation-page-element-1{
   margin-right: 9px;
 }
+
 .navigation-page .navigation-page-element-7{
-  margin-left: 15px;
+  margin-left: 7px;
 }
 
 .contacts {
@@ -1806,12 +1848,15 @@ input:focus {
 
 .offers {
 	display: flex;
-	justify-content: space-around;
+  justify-content: space-around;
+  margin-bottom: 0px;
+  border: 1px solid transparent;
 }
 
 .main-footer {
 	display: flex;
-	justify-content: space-between;
+  justify-content: space-between;
+  margin-top: 5px;
 }
 
 .social-list  {
@@ -1840,20 +1885,13 @@ input:focus {
 .info-list {
   position: relative;
   padding: 0px;
-  margin-top: 13px;
+  margin-top: 22px;
   display: flex;
 	flex-wrap: wrap;
-	-moz-column-gap: 15px;
-	     column-gap: 15px;
 	align-items: center;
 	width:360px;
 }
 
-.info-list h2 {
-  margin-left: 8px;
-  margin-right: 17px;
-  margin-bottom: 4px;
-}
 
 .flex-info-list-1::before{
   position: absolute;
@@ -1862,17 +1900,20 @@ input:focus {
   height: 13px;
   background-image: url("../img/heart.svg");
   background-repeat: no-repeat;
-  top: 13px;
+  top: 4px;
   left: 17px;
 }
 
 .flex-info-list-1 {
-  margin-left: 32px;
+  margin-right: 33px;
+  margin-left: 40px;
 	order:1;
 }
 
 .flex-info-list-2 {
+  margin-top: 5px;
   margin-left: 40px;
+  margin-right: 15px;
 	order:3;
 }
 
@@ -1882,6 +1923,7 @@ input:focus {
 }
 
 .flex-info-list-4 {
+  margin-top: 4px;
   padding-left: 31px;
 	order:4;
 }
@@ -1889,7 +1931,8 @@ input:focus {
 .copyright {
 	display: flex;
 	flex-direction: column;
-	align-items: flex-end;
+  align-items: flex-end;
+  margin-top: -4px;
 }
 
 .copyright img {
@@ -1899,12 +1942,13 @@ input:focus {
 
 .copyright .copyright-logo {
   margin: 0px;
+  margin-top: 2px;
 }
 
 .link-copyright-logo {
   margin: 0px;
   margin-right: 17px;
-  margin-top: 2px;
+  margin-top: 1px;
   font-size: 12px;
   line-height: 18px;
 }
@@ -1960,7 +2004,8 @@ input:focus {
 }
 
 #question {
-	margin-top:0px;
+  margin-top:0px;
+  padding-left: 14px;
 	width: 428px;
 	height: 154px;
 	margin:0 25px;
@@ -1974,6 +2019,7 @@ input:focus {
 	background: var(--basic-white);
   border: 1px solid var(--basic-border-color);
   box-sizing: border-box;
+  padding-left: 14px;
 }
 
 .appointment-form textarea {
