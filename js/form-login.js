@@ -46,10 +46,6 @@ window.addEventListener("keydown", function (evt) {
   }
 });
 
-
-
-
-
 var link = document.querySelector(".button-feedback");
 var popup = document.querySelector(".feedback-block");
 var close = document.querySelector(".close-feedback")

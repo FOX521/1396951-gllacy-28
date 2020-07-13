@@ -5,6 +5,13 @@
 * Browsers: last 2 version,not dead,not ie<=11
 */
 
+/*
+* Prefixed by https://autoprefixer.github.io
+* PostCSS: v7.0.29,
+* Autoprefixer: v9.7.6
+* Browsers: last 2 version,not dead,not ie<=11
+*/
+
 /*Variables*/
 :root{
   --background-basic-green: #849D8F;
@@ -58,7 +65,8 @@ body {
 img {
 	max-width: 100%;
   height: auto;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 a {
@@ -699,7 +707,7 @@ color: var(--basic-black);
 }
 
 .slider-controls button:hover{
-    background-color: rgba(255, 255, 255, 0.4);;
+    background-color: var(--basic-background-link);
 }
 
 .slider-controls .current {
@@ -945,7 +953,7 @@ color: var(--basic-black);
   height: 44px;
   box-sizing: border-box;
   border-radius: 6px;
-  border: 1px solid rgba(178, 178, 178, 0.52);
+  border: 1px solid var(--basic-border-color);
 	}
 
 .button-send {
@@ -1290,7 +1298,7 @@ color: var(--basic-black);
   padding-top: 1px;
   border-radius: 20px;
   color: var(--basic-white);
-  background-color:  rgba(255, 255, 255, 0.2);
+  background-color:  var(--basic-background-link);
   background-image: url("../img/icon-down-dir-white.svg");
   background-position: 172px 15px;
   background-repeat: no-repeat;
@@ -1456,7 +1464,9 @@ color: var(--basic-black);
   top: 8px;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding-left: 31px;
 }
 
@@ -1491,7 +1501,9 @@ color: var(--basic-black);
   position: relative;
   display: block;
   cursor: pointer;
-  user-select: none;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
   padding-left: 31px;
 }
 
@@ -1660,7 +1672,7 @@ color: var(--basic-black);
   padding: 0 30px;
   width:inherit;
   height: 380px;
-	background-color: rgba(255, 255, 255, 0.2);
+	background-color: var(--basic-background-link);
 	box-shadow: 0px 20px 20px rgba(0, 0, 0, 0.2);
  	border-radius: 4px;
   z-index: 26;
@@ -1955,7 +1967,7 @@ color: var(--basic-black);
 
 .feedback-block {
   position:fixed;
-  top: 338px;
+  top: 200px;
   left: 0px;
   right: 0;
   bottom: 0;
